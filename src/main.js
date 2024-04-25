@@ -1,6 +1,7 @@
 import "./styles.css"
 import { createApp } from 'vue'
-import App from './App.vue'
+
+import App from './app.vue'
 import PrimeVue from "primevue/config";
 import 'primeflex/primeflex.css';
 import 'primevue/resources/themes/md-light-indigo/theme.css';
@@ -15,7 +16,7 @@ import Button       from 'primevue/button';
 import SelectButton from 'primevue/selectbutton';
 import Toolbar      from 'primevue/toolbar';
 
-createApp(App)
+createApp(app)
     .component('pv-card', Card)
     .component('pv-button', Button)
     .component('pv-select-button', SelectButton)
@@ -23,4 +24,5 @@ createApp(App)
 
     .mount('#app')
 
+import app from './app.vue'
 
