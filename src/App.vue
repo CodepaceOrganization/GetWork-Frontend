@@ -1,13 +1,15 @@
 <script>
 import FooterContent from "/src/public/components/footer-content.component.vue"
+import HeaderContent from "@/public/components/header-content.component.vue";
 
 export default{
 name: 'Main',
-components: {FooterContent},
+components: {HeaderContent, FooterContent},
 }
 </script>
 
 <template>
+  <header-content></header-content>
  <footer-content></footer-content>
 </template>
 
