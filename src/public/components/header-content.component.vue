@@ -1,13 +1,19 @@
 <script>
-import { useRouter } from 'vue-router';
-export default{
+
+import {useRouter} from 'vue-router';
+
+export default {
   name: "header-content",
   data() {
     return {
       drawer: false,
       items: [
-        {label: 'Home', to: '/Home'},
-        {label: 'Contest', to: '/Contest'},
+        {label: 'Problems', to: '/Problems', class: 'item-1'},
+        {label: 'Contest', to: '/Contest', class: 'item-2'},
+        {label: 'Simulacrum', to: '/Simulacrum', class: 'item-3'},
+        {label: 'Tutors', to: '/Tutors', class: 'item-4'},
+        {label: 'User', to: '/User', class: 'item-5'},
+        {label: 'Premium', to: '/Premium', class: 'item-6'},
       ]
     }
   },
@@ -21,19 +27,18 @@ export default{
     }
   }
 }
-
-
 </script>
 
 <template>
-  <pv-toolbar style="background-color: #BD3F57;" fixed>
+  <pv-toolbar class="toolbar" fixed>
     <template #start>
-      <pv-avatar image="https://github.com/CodepaceOrganization/Informes/assets/142842509/851f5611-99a5-4c48-af26-87346213f56e" style="width: 62px; height: 32px" />
-      <h3 style="color: #FFFFFF;"></h3>
+      <pv-avatar
+          image="https://github.com/CodepaceOrganization/Informes/assets/142842509/851f5611-99a5-4c48-af26-87346213f56e"
+          style="width: 62px; height: 32px"/>
 
       <div class="flex-column">
         <router-link v-for="item in items" :key="item.label" v-slot="{ navigate, href}" :to="item.to" custom>
-          <pv-button :href="href" class="p-button-text text-white" @click="navigate">
+          <pv-button :href="href" class="p-button-text text-white" :class="item.class" @click="navigate">
             {{ item.label }}
           </pv-button>
         </router-link>
@@ -43,15 +48,40 @@ export default{
 </template>
 
 <style scoped>
+
 .toolbar {
   background-color: #BD3F57;
   color: white;
   padding: 1rem;
+  margin-top: -1rem;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+.item-1{
+  margin-right: 3rem;
+  margin-left: 2rem;
 }
 
-.toolbar h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
+.item-2{
+  margin-right: 3rem;
 }
+
+.item-3{
+  margin-right: 3rem;
+}
+
+.item-4{
+  margin-right: 3rem;
+}
+
+.item-5{
+  margin-left: 55rem;
+}
+
+.item-6{
+  margin-left: 10rem;
+  color: #BD3F57 !important;
+  background-color: #ffffff;
+}
+
 </style>

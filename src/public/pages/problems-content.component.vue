@@ -1,7 +1,7 @@
 <script>
 export default {
-  name: "home",
-  title: "Home"
+  name: "problems",
+  title: "problems"
 }
 </script>
 Get
