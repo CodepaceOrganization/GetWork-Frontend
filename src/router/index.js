@@ -1,18 +1,22 @@
+// Routing Module
+
 import {createRouter, createWebHistory} from "vue-router";
-import ProblemsContent from "@/public/pages/problems-content.component.vue";
-import contestContent from "@/sections/components/contest-content.component.vue";
+import SimulacrumComponent from "@/sections/components/simulacrum.component.vue";
+
+
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        {path: '/problems', component: ProblemsContent, meta: {title: 'Problems'},},
-        {path: '/contest', component: contestContent, meta: {title: 'Contest'},},
-        {path: '/', redirect: '/problems'}
+        { path: '/simulacrum', component: SimulacrumComponent, meta: { title: 'Simulacrum' } },
+        { path: '/',          redirect: '/home' }
     ]
 });
 
 router.beforeEach((to, from, next) => {
-    let baseTitle = 'Getwork-Frontend';
-    document.title = `${baseTitle} | ${to.meta["title"]}`;
+    let baseTitle = 'GetWork';
+    document.title = `${ baseTitle } | ${to.meta["title"]}`;
     next();
 });
 export default router;
+
+

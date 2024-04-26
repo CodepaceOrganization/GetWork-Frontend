@@ -10,6 +10,7 @@ components: {HeaderContent, FooterContent},
 
 <template>
   <header-content></header-content>
+  <router-view></router-view>
  <footer-content></footer-content>
 </template>
 

@@ -52,10 +52,9 @@ export default {
 .toolbar {
   background-color: #BD3F57;
   color: white;
-  padding: 1rem;
-  margin-top: -1rem;
-  margin-right: -1rem;
-  margin-left: -1rem;
+  padding: 1.2rem;
+
+
 }
 .item-1{
   margin-right: 3rem;
