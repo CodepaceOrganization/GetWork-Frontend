@@ -1,6 +1,6 @@
 import {createRouter, createWebHistory} from "vue-router";
 import HomeContent from "@/public/pages/home-content.component.vue";
-import contestContent from "@/public/pages/Contest/contest-content.vue";
+import contestContent from "@/sections/components/contest-content.component.vue";
 const router = createRouter({
     history: createWebHistory(),
     routes: [
