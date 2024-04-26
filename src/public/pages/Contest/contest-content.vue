@@ -1,9 +1,9 @@
 <script>
 
-import Cours1Content from "@/public/pages/courses/cours1-content.vue";
-import Cours2Content from "@/public/pages/courses/cours2-content.vue";
-import Cours3Content from "@/public/pages/courses/cours3-content.vue";
-import Cours4Content from "@/public/pages/courses/cours4-content.vue";
+import Cours1Content from "@/public/pages/Contest/courses/cours1-content.vue";
+import Cours2Content from "@/public/pages/Contest/courses/cours2-content.vue";
+import Cours3Content from "@/public/pages/Contest/courses/cours3-content.vue";
+import Cours4Content from "@/public/pages/Contest/courses/cours4-content.vue";
 
 export default {
   name: "contest",

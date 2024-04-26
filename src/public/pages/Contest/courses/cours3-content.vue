@@ -3,6 +3,7 @@
 
 export default {
   name: "cours3-content",
+  title: "cours3"
 }
 </script>
 <template>
