@@ -29,7 +29,7 @@ export default{
   <pv-toolbar style="background-color: #BD3F57;" fixed>
     <template #start>
       <pv-avatar image="https://github.com/CodepaceOrganization/Informes/assets/142842509/851f5611-99a5-4c48-af26-87346213f56e" style="width: 62px; height: 32px" />
-      <h3 style="color: #FFFFFF;">penerico</h3>
+      <h3 style="color: #FFFFFF;"></h3>
 
       <div class="flex-column">
         <router-link v-for="item in items" :key="item.label" v-slot="{ navigate, href}" :to="item.to" custom>
