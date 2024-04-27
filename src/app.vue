@@ -16,4 +16,5 @@ components: {HeaderContent, FooterContent},
 </template>
 
 <style scoped>
+  
 </style>
