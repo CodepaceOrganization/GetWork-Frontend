@@ -7,6 +7,8 @@ import SimulacrumComponent from "@/sections/components/simulacrum.component.vue"
 const router = createRouter({
     history: createWebHistory(),
     routes: [
+        { path: '/simulacrum', component: SimulacrumComponent, meta: { title: 'Simulacrum' } },
+        { path: '/',          redirect: '/home' }
     ]
 });
 

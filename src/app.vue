@@ -5,6 +5,7 @@ import {CoursesApiService} from "@/contest/services/courses-api.service.js";
 import ContestList from "@/contest/components/contest-list.component.vue";
 import {Course} from "@/contest/model/course.entity.js";
 
+
 export default{
 name: 'Main',
 components: {HeaderContent, FooterContent, ContestList},
@@ -43,7 +44,7 @@ components: {HeaderContent, FooterContent, ContestList},
 <template>
   <header-content></header-content>
   <router-view></router-view>
- <footer-content></footer-content>
+  <footer-content></footer-content>
 </template>
 
 <style scoped>
