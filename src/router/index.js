@@ -10,7 +10,6 @@ const router = createRouter({
     routes: [
         { path: '/contest-list', component: ContestListComponent, meta: { title: 'Contest' } },
         { path: '/simulacrum', component: SimulacrumComponent, meta: { title: 'Simulacrum' } },
-        { path: '/',          redirect: '/home' }
     ]
 });
 
