@@ -8,7 +8,7 @@ export default {
 
   <pv-card class="pv-card" >
       <template #header>
-        <img alt="user-header" class="image" src="" />
+        <img alt="user-header" class="image" src="/src/assets/images/javier_montoya.png" />
       </template>
       <template #title>Javier Montoya</template>
       <template #content>
