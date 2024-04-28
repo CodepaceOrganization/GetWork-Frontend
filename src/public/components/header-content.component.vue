@@ -9,7 +9,7 @@ export default {
       drawer: false,
       items: [
         {label: 'Problems', to: '/Problems', class: 'item-1'},
-        {label: 'Contest', to: '/Contest', class: 'item-2'},
+        {label: 'Contest', to: '/Contest-list', class: 'item-2'},
         {label: 'Simulacrum', to: '/Simulacrum', class: 'item-3'},
         {label: 'Tutors', to: '/Tutors', class: 'item-4'},
         {label: 'User', to: '/User', class: 'item-5'},
@@ -49,12 +49,18 @@ export default {
 
 <style scoped>
 
+* {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
 .toolbar {
   background-color: #BD3F57;
   color: white;
   padding: 1.2rem;
-
-
+  justify-content: center;
+  display: flex;
 }
 .item-1{
   margin-right: 3rem;
@@ -79,8 +85,10 @@ export default {
 
 .item-6{
   margin-left: 10rem;
+  margin-bottom: -0.5rem;
   color: #BD3F57 !important;
   background-color: #ffffff;
+  padding: 0.6rem;
 }
 
 </style>
