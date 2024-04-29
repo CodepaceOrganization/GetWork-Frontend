@@ -8,7 +8,7 @@ export default {
     return {
       drawer: false,
       items: [
-        {label: 'Problems', to: '/Problems', class: 'item-1'},
+        {label: 'Technical Tests', to: '/technical-tests', class: 'item-1'},
         {label: 'Contest', to: '/Contest-list', class: 'item-2'},
         {label: 'Simulacrum', to: '/Simulacrum', class: 'item-3'},
         {label: 'Tutors', to: '/Tutors', class: 'item-4'},
