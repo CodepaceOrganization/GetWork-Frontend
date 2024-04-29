@@ -25,6 +25,13 @@ export default {
             .catch(e => {
                 console.log(e);
             });
+        this.technicalTestsStudiesService.getAllStudyPlan()
+            .then(response => {
+                this.technicalTestsStudies = response.data;
+            })
+            .catch(e => {
+                console.log(e);
+            });
     }
 }
 </script>
@@ -35,6 +42,12 @@ export default {
                 <h2 class="title">30 days of</h2>
                 <div class="card-container">
                     <technical-test-card-component class="technical-test-card" v-for="technicalTest in technicalTests" :key="technicalTest.id" :technicalTest="technicalTest"></technical-test-card-component>
+                </div>
+            </div>
+            <div class="container-technical-test-list">
+                <h2 class="title">Study Plan</h2>
+                <div class="card-container">
+                  <technical-test-card-component class="technical-test-card" v-for="technicalTest in technicalTestsStudies" :key="technicalTest.id" :technicalTest="technicalTest"></technical-test-card-component>
                 </div>
             </div>
     </div>

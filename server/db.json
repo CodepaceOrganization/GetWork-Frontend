@@ -1,0 +1,79 @@
+{
+  "technical-tests-30-days-of": [
+    {
+      "id": 1,
+      "title": "Vue.js",
+      "description": "Ace Coding Interview with 75 Qs",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/e1ec3d30-0207-4ac0-884e-fc99de3d46b8"
+    },
+    {
+      "id": 2,
+      "title": "30 Days of C#",
+      "description": "Ace Coding Interview with 75 Qs",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/af1fb045-b8d8-4d61-9df2-71e92d2ee145"
+    },
+    {
+      "id": 3,
+      "title": "30 Days of C++",
+      "description": "Ace Coding Interview with 75 Qs",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/7537b1fc-20ba-4513-ac87-d6100af864eb"
+    },
+    {
+      "id": 4,
+      "title": "Angular",
+      "description": "Ace Coding Interview with 75 Qs",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/ff9e4fd9-ccd6-4abc-bdc0-ca63155675e2"
+    },
+    {
+      "id": 5,
+      "title": "MySQL 80",
+      "description": "Ace Coding Interview with 75 Qs",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/d212f118-1bc7-49df-9f9a-7e6b59bf0b8c"
+    },
+    {
+      "id": 6,
+      "title": "30 Days of Pyhon",
+      "description": "Ace Coding Interview with 75 Qs",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/468c15d3-c548-4d8f-b256-385338542546"
+    }
+  ],
+
+  "technical-tests-study-plan": [
+    {
+      "id": 1,
+      "title": "Top Interview 150",
+      "description": "Must-do List for Interview Prep",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/0e491f51-d9a6-45ec-99eb-f50bee016261"
+    },
+    {
+      "id": 2,
+      "title": "GetWork 75",
+      "description": "Ace Coding Interview with 75 Qs",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/aedb63b9-0b7f-413b-9ba0-c4498d6054ff"
+    },
+    {
+      "id": 3,
+      "title": "SQL 50",
+      "description": "Crack SQL Interview in 50 Qs",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/3f1d07a1-35aa-4075-af6d-f19c130e6cf2"
+    },
+    {
+      "id": 4,
+      "title": "30 Days of Pandas",
+      "description": "Limited Time FREE in August",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/d6a90ea4-12b2-41be-bc00-a84f9a5daad4"
+    },
+    {
+      "id": 5,
+      "title": "30 Days of JavaScript",
+      "description": "Learn JS Basics with 30 Qs",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/21a90acc-d3e1-4a11-939b-c4194d7a788d"
+    },
+    {
+      "id": 6,
+      "title": "Amazon Spring ‘23 High",
+      "description": "Practice Amazon 25 Recently...",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/ab5617ce-664a-4517-97c8-275fdb3d0570"
+    }
+  ]
+}
