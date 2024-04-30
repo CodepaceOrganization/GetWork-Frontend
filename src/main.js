@@ -24,6 +24,7 @@ import DialogService        from "primevue/dialogservice";
 
 // PrimeVue Components
 import DataTable        from "primevue/datatable";
+import Calendar from 'primevue/calendar';
 import Column           from "primevue/column";
 import ConfirmDialog    from "primevue/confirmdialog";
 import Row              from "primevue/row";
@@ -75,4 +76,5 @@ createApp(App)
     .component('pv-textarea',       Textarea)
     .component('pv-toolbar',        Toolbar)
     .component('pv-toast',          Toast)
+    .component('pv-calendar', Calendar)
     .mount('#app');
