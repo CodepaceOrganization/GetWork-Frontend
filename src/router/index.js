@@ -7,8 +7,7 @@ import plansComponent from "@/sections/components/plans.component.vue";
 import profileManagementComponent from "@/sections/components/profile-management.component.vue";
 import tutorsComponent from "@/sections/components/tutors.component.vue";
 import technicalTestListComponent from "@/technical-test/pages/technical-test-list.component.vue";
-
-
+import technicalTestDetailListComponent from "@/technical-test/pages/technical-test-detail-list.component.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -19,7 +18,8 @@ const router = createRouter({
         { path: '/Premium', component: plansComponent, meta: { title: 'Premium' } },
         { path: '/User', component: profileManagementComponent, meta: { title: 'Profile Management' } },
         { path: '/Tutors', component: tutorsComponent, meta: { title: 'Tutors' } },
-        { path: '/', redirect: '/home' }
+        { path: '/', redirect: '/home' },
+        { path: '/technical-tests-30-days-of/:id', component: technicalTestDetailListComponent, meta: { title: 'Technical Test Details' } }
     ]
 });
 

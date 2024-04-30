@@ -41,13 +41,22 @@ export default {
             <div class="container-technical-test-list">
                 <h2 class="title">30 days of</h2>
                 <div class="card-container">
-                    <technical-test-card-component class="technical-test-card" v-for="technicalTest in technicalTests" :key="technicalTest.id" :technicalTest="technicalTest"></technical-test-card-component>
+                    <router-link
+                            v-for="technicalTest in technicalTests"
+                            :key="technicalTest.id"
+                            :to="'/technical-tests-30-days-of/' + technicalTest.id">
+                        <technical-test-card-component class="technical-test-card" :technicalTest="technicalTest"></technical-test-card-component>
+                    </router-link>
                 </div>
             </div>
             <div class="container-technical-test-list">
                 <h2 class="title">Study Plan</h2>
                 <div class="card-container">
-                  <technical-test-card-component class="technical-test-card" v-for="technicalTest in technicalTestsStudies" :key="technicalTest.id" :technicalTest="technicalTest"></technical-test-card-component>
+                  <technical-test-card-component class="technical-test-card"
+                                                 v-for="technicalTest in technicalTestsStudies"
+                                                 :key="technicalTest.id"
+                                                 :technicalTest="technicalTest"
+                  ></technical-test-card-component>
                 </div>
             </div>
     </div>
