@@ -44,7 +44,7 @@ export default {
                     <router-link
                             v-for="technicalTest in technicalTests"
                             :key="technicalTest.id"
-                            :to="'/technical-tests-30-days-of/' + technicalTest.id">
+                            :to="'/details-' + technicalTest.id">
                         <technical-test-card-component class="technical-test-card" :technicalTest="technicalTest"></technical-test-card-component>
                     </router-link>
                 </div>

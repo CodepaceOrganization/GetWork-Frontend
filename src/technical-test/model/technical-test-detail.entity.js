@@ -1,4 +1,4 @@
-export class TechnicalTestDetailEntity {
+export class TechnicalTestDetail {
     constructor(id = '', description = '', difficulty = '', progress = '', status = '') {
         this.id = id;
         this.description = description;

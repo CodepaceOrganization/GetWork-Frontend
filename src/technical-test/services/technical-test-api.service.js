@@ -7,8 +7,8 @@ export class TechnicalTestApiService {
     getAllStudyPlan() {
         return http.get('/technical-tests-study-plan');
     }
-    getTechnicalTestDetail(id) {
-        return http.get(`/technical-tests-30-days-of/${id}`);
+    getTechnicalTestDetail() {
+        return http.get(`/details-3`);
 
     }
     getById(id) {

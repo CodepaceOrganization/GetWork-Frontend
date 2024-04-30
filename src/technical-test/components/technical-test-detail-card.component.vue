@@ -1,10 +1,10 @@
 <script>
-import {TechnicalTest} from "@/technical-test/model/technical-test.entity.js";
+import {TechnicalTestDetail} from "@/technical-test/model/technical-test-detail.entity.js";
 
 export default {
     name: "technical-test-detail.component",
     props: {
-        technicalTest: TechnicalTest,
+        technicalTestDetail: TechnicalTestDetail
     },
     methods: {
         getStatusColor(status) {
@@ -24,16 +24,16 @@ export default {
     <pv-card class="custom-card" style="width: 25rem; height: 10rem; overflow: hidden">
         <template #content>
             <div class="left-container">
-                <p>{{ technicalTest.technicalTestDetails.description }}</p>
+                <p>{{ technicalTestDetail.description }}</p>
             </div>
-            <div v-if="technicalTest.technicalTestDetails.progress === 'Earrings'" class="right-container">
-                <p :class="technicalTest.technicalTestDetails.difficulty.toLowerCase()">{{ technicalTest.technicalTestDetails.difficulty }}</p>
+            <div v-if="technicalTestDetail.progress === 'Earrings'" class="right-container">
+                <p :class="technicalTestDetail.difficulty.toLowerCase()">{{ technicalTestDetail.difficulty }}</p>
             </div>
-            <div v-else-if="technicalTest.technicalTestDetails.progress === 'InProgress'" class="right-container">
-                <p :class="getStatusColor(technicalTest.technicalTestDetails.status)">{{ technicalTest.technicalTestDetails.status }}/100</p>
+            <div v-else-if="technicalTestDetail.progress === 'InProgress'" class="right-container">
+                <p :class="getStatusColor(technicalTestDetail.status)">{{ technicalTestDetail.status }}/100</p>
             </div>
-            <div v-else-if="technicalTest.technicalTestDetails.progress === 'Done'" class="right-container">
-                <p class = "status-green" >{{ technicalTest.technicalTestDetails.progress }}</p>
+            <div v-else-if="technicalTestDetail.progress === 'Done'" class="right-container">
+                <p class = "status-green" >{{ technicalTestDetail.progress }}</p>
             </div>
         </template>
     </pv-card>
