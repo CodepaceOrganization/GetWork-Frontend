@@ -62,7 +62,7 @@ export default {
   methods: {
     toggleDrawer() {
       this.drawer = !this.drawer;
-      this.isDrawerOpen = !this.isDrawerOpen;
+      this.isDrawerOpen = !this.isDrawerOpen; 
     },
     navigateTo(route) {
       const router = useRouter();

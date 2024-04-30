@@ -20,9 +20,7 @@ export default {
   background-color: #BD3F57;
   color: #fff;
   text-align: center;
-  padding: 2.5rem;
-  margin-top: 40px;
-
+  padding: 1.2rem;
 }
 .copyright{
   padding-bottom: 1.5rem;
