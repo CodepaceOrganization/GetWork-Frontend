@@ -75,5 +75,83 @@
       "description": "Practice Amazon 25 Recently...",
       "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/ab5617ce-664a-4517-97c8-275fdb3d0570"
     }
+  ],
+
+  "courses": [
+    {
+      "id": 1,
+      "title": "Weekly Contest 392",
+      "date": "Apr 6 2024 8:30 pm",
+      "image": "https://github.com/CodepaceOrganization/GetWork-Frontend/assets/142842509/37dbe0d4-c7d1-4608-bf35-f9f6eebc568f"
+    },
+    {
+      "id": 2,
+      "title": "Weekly Contest 391",
+      "date": "Apr 5 2024 8:30 pm",
+      "image": "https://github.com/CodepaceOrganization/GetWork-Frontend/assets/142842509/37dbe0d4-c7d1-4608-bf35-f9f6eebc568f"
+    },
+    {
+      "id": 3,
+      "title": "Weekly Contest 390",
+      "date": "Apr 4 2024 8:30 pm",
+      "image": "https://github.com/CodepaceOrganization/GetWork-Frontend/assets/142842509/37dbe0d4-c7d1-4608-bf35-f9f6eebc568f"
+    },
+    {
+      "id": 4,
+      "title": "Weekly Contest 389",
+      "date": "Apr 2 2024 8:30 pm",
+      "image": "https://github.com/CodepaceOrganization/GetWork-Frontend/assets/142842509/713a8e62-5d85-4718-8b51-18fc95e9b9d6"
+    }
+  ],
+  "ranking": [
+    {
+      "id": 1,
+      "name": "andresvz",
+      "rating": "3976",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/eac96852-51fa-471b-9878-b2bb5b2f73d7"
+
+    },
+    {
+      "id": 2,
+      "name": "jujo_21",
+      "rating": "3950",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/daaad059-a201-44b8-a9f1-c8e524b6ab27"
+    },
+    {
+      "id": 3,
+      "name": "hzl11",
+      "rating": "3940",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/4ec4ab7b-a5e9-4594-8609-1ac71974407f"
+    },
+    {
+      "id": 4,
+      "name": "diego12321",
+      "rating": "3933",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/d46db6b4-e3f7-4a6c-a2df-1324ec07514e"
+    },
+    {
+      "id": 5,
+      "name": "romtues21",
+      "rating": "3859",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/3b6dd1a3-bfa6-4743-a176-05fdc27186ca"
+    },
+    {
+      "id": 6,
+      "name": "loli12",
+      "rating": "3820",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/daaad059-a201-44b8-a9f1-c8e524b6ab27"
+    },
+    {
+      "id": 7,
+      "name": "dalereg",
+      "rating": "320",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/48e2d551-4da1-4154-a441-288cfbc2f0fc"
+    },
+    {
+      "id": 8,
+      "name": "sebascp2005",
+      "rating": "100",
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/0716a226-211f-497d-95b4-5b120130d7b1"
+    }
   ]
 }

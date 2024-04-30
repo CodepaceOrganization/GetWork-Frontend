@@ -1,16 +1,10 @@
-import axios from "axios";
+import http from "../../shared/services/http-common.js";
 
-const http = axios.create({
-    baseURL: 'https://my-json-server.typicode.com/CodepaceOrganization/Datos-getwork-',
-});
-
-export class CoursesApiService {
-    getSources() {
-        return http.get(`courses`);
+export class CoursesApiService{
+    getAllCourses() {
+        return http.get('/courses');
     }
-
-    /*getArticlesForSource(sourceId) {
-        return http.get(`top-headlines?sources=${sourceId}&apiKey=${this.apiKey}`);
-    }*/
-    
+    getRanking(){
+        return http.get('/ranking');
+    }
 }
