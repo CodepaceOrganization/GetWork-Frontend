@@ -68,7 +68,7 @@ export default {
             </p>
           </div>
           <div class="flex gap-2">
-            <a href="../../" class="text-white"> <p class="m-0 mt-2 text-sm text-white "> Ver mas </p></a>
+            <a href="../../../.." class="text-white"> <p class="m-0 mt-2 text-sm text-white "> Ver mas </p></a>
           </div>
           <div class="flex justify-content-center align-content-center mt-3">
             <pv-button class="px-6 p-2 border-round-xl border-transparent bg-pink-300 text-white shadow-5 font-bold"> Comenzar </pv-button>
@@ -98,7 +98,7 @@ export default {
             </p>
           </div>
           <div class="flex gap-2">
-            <a href="../../" class="text-white"> <p class="m-0 mt-2 text-sm text-white "> Ver mas </p></a>
+            <a href="../../../.." class="text-white"> <p class="m-0 mt-2 text-sm text-white "> Ver mas </p></a>
           </div>
           <div class="flex justify-content-center align-content-center mt-3">
             <pv-button class="px-6 p-2 border-round-xl border-transparent bg-pink-300 text-white shadow-5 font-bold"> Comenzar </pv-button>

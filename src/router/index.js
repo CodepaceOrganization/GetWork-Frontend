@@ -1,11 +1,11 @@
 // Routing Module
 
 import {createRouter, createWebHistory} from "vue-router";
-import SimulacrumComponent from "@/sections/components/simulacrum.component.vue";
+import SimulacrumComponent from "@/sections/simulacrum/components/simulacrum.component.vue";
 import ContestListComponent from "@/contest/components/contest-list.component.vue";
-import plansComponent from "@/sections/components/plans.component.vue";
-import profileManagementComponent from "@/sections/components/profile-management.component.vue";
-import tutorsComponent from "@/sections/components/tutors.component.vue";
+import plansComponent from "@/sections/plans/components/plans.component.vue";
+import profileManagementComponent from "@/sections/profile-management/components/profile-management.component.vue";
+import tutorsComponent from "@/sections/tutors/components/tutors.component.vue";
 import technicalTestListComponent from "@/technical-test/pages/technical-test-list.component.vue";
 import technicalTestDetailListComponent from "@/technical-test/pages/technical-test-detail-list.component.vue";
 
@@ -18,7 +18,7 @@ const router = createRouter({
         { path: '/Premium', component: plansComponent, meta: { title: 'Premium' } },
         { path: '/User', component: profileManagementComponent, meta: { title: 'Profile Management' } },
         { path: '/Tutors', component: tutorsComponent, meta: { title: 'Tutors' } },
-        { path: '/', redirect: '/home' },
+        { path: '/', redirect: '/technical-tests' },
         { path: '/details-:id', component: technicalTestDetailListComponent, meta: { title: 'Technical Test Details' } }
     ]
 });
