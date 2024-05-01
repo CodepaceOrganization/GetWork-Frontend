@@ -33,7 +33,7 @@ export default {
                 class="technical-test-card"
                 v-for="technicalTestDetail in technicalTestDetails"
                 :key="technicalTestDetail.id"
-                :technicalTest="technicalTestDetail"
+                :technicalTestDetail="technicalTestDetail"
             ></technical-test-detail-card-component>
         </div>
         <div class="inProgress-container">

@@ -4,7 +4,7 @@ import {TechnicalTestDetail} from "@/technical-test/model/technical-test-detail.
 export default {
     name: "technical-test-detail.component",
     props: {
-        technicalTestDetail: TechnicalTestDetail
+      technicalTestDetail: TechnicalTestDetail
     },
     methods: {
         getStatusColor(status) {
