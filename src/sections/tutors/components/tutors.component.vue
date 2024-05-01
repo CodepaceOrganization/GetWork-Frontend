@@ -7,7 +7,7 @@ export default {
       cards: []
     };
   },
-  mounted() {
+  mounted() { 
     this.fetchCards();
   },
   methods: {
