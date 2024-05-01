@@ -18,7 +18,7 @@ const router = createRouter({
         { path: '/Premium', component: plansComponent, meta: { title: 'Premium' } },
         { path: '/User', component: profileManagementComponent, meta: { title: 'Profile Management' } },
         { path: '/Tutors', component: tutorsComponent, meta: { title: 'Tutors' } },
-        { path: '/', redirect: '/home' },
+        { path: '/', redirect: '/technical-tests' },
         { path: '/details-3', component: technicalTestDetailListComponent, meta: { title: 'Technical Test Details' } }
     ]
 });
