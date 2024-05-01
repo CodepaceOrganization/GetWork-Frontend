@@ -1,5 +1,5 @@
 <script>
-import { TechnicalTest } from "@/technical-test/model/technical-test.entity.js";
+import { TechnicalTest } from "@/sections/technical-test/model/technical-test.entity.js";
 
 export default {
     name: 'technical-test',

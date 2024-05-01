@@ -1,4 +1,4 @@
-import http from "../../shared/services/http-common.js";
+import http from "../../../shared/services/http-common.js";
 
 export class TechnicalTestApiService {
     getAll30DaysOf() {
@@ -7,8 +7,8 @@ export class TechnicalTestApiService {
     getAllStudyPlan() {
         return http.get('/technical-tests-study-plan');
     }
-    getTechnicalTestDetail() {
-        return http.get(`/details-3`);
+    getTechnicalTestDetail(id) {
+        return http.get(`/details-${id}`);
 
     }
     getById(id) {

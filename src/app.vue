@@ -1,9 +1,9 @@
 <script>
 import FooterContent from "/src/public/components/footer-content.component.vue"
 import HeaderContent from "@/public/components/header-content.component.vue";
-import {CoursesApiService} from "@/contest/services/courses-api.service.js";
-import ContestList from "@/contest/components/contest-list.component.vue";
-import {Course} from "@/contest/model/course.entity.js";
+import {CoursesApiService} from "@/sections/contest/services/courses-api.service.js";
+import ContestList from "@/sections/contest/components/contest-list.component.vue";
+import {Course} from "@/sections/contest/model/course.entity.js";
 
 
 export default{

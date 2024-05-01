@@ -27,7 +27,7 @@ export default {
 <template>
   <div class="bg-gray-400 p-8 flex flex-column lg:flex-row justify-content-evenly ">
     <div>
-      <img src="../../../../assets/images/profile.png" alt="profile" class="w-30rem  "/>
+      <img src="../../../assets/images/profile.png" alt="profile" class="w-30rem  "/>
     </div>
     <div class="text-4xl flex flex-column flex-wrap justify-content-center align-content-center">
       <h2> Nombre:  {{this.getFullName }}</h2>

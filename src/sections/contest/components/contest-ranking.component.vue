@@ -1,6 +1,6 @@
 <script>
 
-import {Ranking} from "@/contest/model/ranking.entity.js";
+import {Ranking} from "@/sections/contest/model/ranking.entity.js";
 export default {
   name: "contest-rankin",
   // Define los props esperados por el componente

@@ -1,5 +1,5 @@
 <script >
-import {Course} from "@/contest/model/course.entity.js";
+import {Course} from "@/sections/contest/model/course.entity.js";
 
 export default {
   name: "section-contest",

@@ -1,7 +1,7 @@
 <script>
 import SectionContest from './contest.component.vue';
-import {CoursesApiService} from "@/contest/services/courses-api.service.js";
-import ContestRankin from "@/contest/components/contest-ranking.component.vue";
+import {CoursesApiService} from "@/sections/contest/services/courses-api.service.js";
+import ContestRankin from "@/sections/contest/components/contest-ranking.component.vue";
 
 export default {
   name: "contest-list",

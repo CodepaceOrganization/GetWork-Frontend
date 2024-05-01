@@ -1,6 +1,6 @@
 <script>
-import { TechnicalTestApiService } from "@/technical-test/services/technical-test-api.service.js";
-import technicalTestCardComponent from "@/technical-test/components/technical-test-card.component.vue";
+import { TechnicalTestApiService } from "@/sections/technical-test/services/technical-test-api.service.js";
+import technicalTestCardComponent from "@/sections/technical-test/components/technical-test-card.component.vue";
 
 export default {
     name: "technical-test-list.component",
@@ -42,10 +42,10 @@ export default {
                 <h2 class="title">30 days of</h2>
                 <div class="card-container">
                     <router-link
-                            v-for="technicalTest in technicalTests"
-                            :key="technicalTest.id"
-                            :to="'details-' + technicalTest.id">
-                        <technical-test-card-component class="technical-test-card" :technicalTest="technicalTest"></technical-test-card-component>
+                        v-for="technicalTest in technicalTests"
+                        :key="technicalTest.id"
+                        :to="'/details/' + technicalTest.id">
+                      <technical-test-card-component class="technical-test-card" :technicalTest="technicalTest"></technical-test-card-component>
                     </router-link>
                 </div>
             </div>
