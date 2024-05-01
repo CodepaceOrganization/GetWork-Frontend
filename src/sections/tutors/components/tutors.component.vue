@@ -1,6 +1,5 @@
 <script>
 import { TutorsApiService } from "@/sections/tutors/services/tutors-api.service.js";
-import { eventBus } from '@/eventBus.js';
 
 export default {
   data() {
@@ -37,10 +36,6 @@ export default {
             console.error(error);
           });
     },
-    reserve(tutorName, time) {
-      // Emitir un evento con la información de la reserva
-      eventBus.$emit("reservation-made", { tutorName, time });
-    }
 
   }
 };
@@ -69,7 +64,7 @@ export default {
         </template>
         <template #footer>
           <div class="button-container">
-            <pv-button label="Reservar" class="btn_reservar" @click="reserve(card.name, selectedTime)" />
+            <pv-button label="Reservar" class="btn_reservar"/>
           </div>
         </template>
       </pv-card>
