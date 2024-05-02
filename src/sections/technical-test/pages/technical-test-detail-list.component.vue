@@ -166,4 +166,12 @@ export default {
 .technical-test-card{
   margin-bottom: 15px;
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+  }
+}
 </style>
