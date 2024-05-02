@@ -47,14 +47,21 @@ export default {
   </div>
   <div class="coursesContent">
     <div class="coursesContainer">
-      <section-contest v-for="course in courses" :key="course.id" :course="course"></section-contest>
+      <router-link v-for="course in courses" 
+                   :key="course.id" 
+                   :to="'/courses/' + course.id">
+        <section-contest class="contest-card" :course="course"></section-contest>
+      </router-link>
     </div>
+    
+    
     <div class="rankinsContainer">
       <h1 class="title">
         Global Ranking
       </h1>
       <contest-rankin v-for="ranking in rankings" :key="ranking.id" :ranking="ranking"></contest-rankin>
     </div>
+    
   </div>
 </template>
 
