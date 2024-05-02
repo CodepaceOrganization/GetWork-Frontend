@@ -31,14 +31,16 @@ export default {
 
 <style scoped>
 .custom-card {
+  border-width: 10rem;
   margin-top: 3rem;
-  margin-left: 16rem;
-  margin-bottom: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;  
 }
 
 .card-content {
   display: flex;
   align-items: center;
+  
 }
 
 .image-container {
