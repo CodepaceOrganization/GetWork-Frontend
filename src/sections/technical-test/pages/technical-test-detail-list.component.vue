@@ -109,9 +109,9 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
 .container {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  width: 80%; /* Ajusta el ancho según sea necesario */
-  margin: 20px auto; /* Centra horizontalmente usando margen automático */
+  justify-content: center;
+  width: 80%;
+  margin: 20px auto;
 }
 
 .column {
@@ -132,37 +132,36 @@ export default {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* Estilos para los contenedores de cada columna */
 .earrings-container,
 .inProgress-container,
 .done-container {
   background-color: #BD3F57;
   border-radius: 30px;
   padding: 10px;
-  margin-bottom: 20px; /* Ajusta el margen según tus necesidades */
+  margin-bottom: 20px;
 }
 
 .column-subtitles {
   margin: 10px;
   display: flex;
-  flex-direction: row; /* Asegura que los elementos estén en fila */
-  justify-content: center; /* Centra horizontalmente los elementos en la fila */
-  align-items: center; /* Centra verticalmente los elementos en la fila */
-  flex: 1; /* Hace que la columna ocupe todo el espacio disponible */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .column-subtitles h2{
   color: #ffffff;
 }
 .left-container {
-  flex: 0.75; /* Cambia este valor para ajustar el tamaño del contenedor izquierdo */
+  flex: 0.75;
 }
 
 .right-container {
-  flex: 0.25; /* Cambia este valor para ajustar el tamaño del contenedor derecho */
+  flex: 0.25;
   display: flex;
-  justify-content: center; /* Centra horizontalmente el contenido del right-container */
-  align-items: center; /* Centra verticalmente el contenido del right-container */
+  justify-content: center;
+  align-items: center;
 }
 .technical-test-card{
   margin-bottom: 15px;

@@ -66,35 +66,35 @@ export default {
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centra verticalmente */
+  align-items: center;
 }
 
 .column {
   display: flex;
-  flex-direction: row; /* Asegura que los elementos estén en fila */
-  justify-content: center; /* Centra horizontalmente los elementos en la fila */
-  align-items: center; /* Centra verticalmente los elementos en la fila */
-  flex: 1; /* Hace que la columna ocupe todo el espacio disponible */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .left-container {
-  flex: 0.75; /* Cambia este valor para ajustar el tamaño del contenedor izquierdo */
+  flex: 0.75;
 }
 .left-container p{
   margin: 10px;
   line-height: 1.5;
 }
 .right-container {
-  flex: 0.25; /* Cambia este valor para ajustar el tamaño del contenedor derecho */
+  flex: 0.25;
   display: flex;
-  justify-content: center; /* Centra horizontalmente el contenido del right-container */
-  align-items: center; /* Centra verticalmente el contenido del right-container */
+  justify-content: center;
+  align-items: center;
 }
 
 .custom-card {
   width: 100%;
-  height: auto; /* Cambia esto según sea necesario */
-  min-height: 50px; /* Ajusta la altura mínima según sea necesario */
+  height: auto;
+  min-height: 50px;
   border-radius: 10px;
 }
 </style>

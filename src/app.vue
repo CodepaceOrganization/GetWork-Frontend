@@ -24,19 +24,6 @@ components: {HeaderContent, FooterContent, ContestList},
       return courses.map(course =>
           new Course(course.title, course.date, course.url));
     },
-    
-    // Fetch articles for selected Source
-    /*etArticlesForSource(sourceId) {
-      this.newsApi.getArticlesForSource(sourceId)
-          .then(response => {
-            let articles = response.data.articles;
-            this.articles = this.buildArticleListFromResponseData(articles);
-            console.log(response.data.articles);
-          })
-          .catch(e => {
-            this.errors.push(e);
-          });
-    },*/
   }
 }
 </script>

@@ -80,17 +80,26 @@ export default {
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribuye las tarjetas uniformemente en el contenedor */
+    justify-content: space-between;
 }
 
 .technical-test-card {
-    width: calc(33.33% - 10px); /* Establece un ancho fijo para que ocupe un tercio del contenedor */
+    width: calc(33.33% - 10px);
     margin-bottom: 30px;
 }
 .calendar-container {
     position: absolute;
     top: 40%;
     right: 0;
-    width: 20%; /* Ajusta el ancho según sea necesario */
+    width: 20%;
 }
+
+@media(max-width: 790px){
+  .calendar-container {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 </style>
