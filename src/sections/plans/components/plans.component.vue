@@ -112,5 +112,7 @@ export default {
 <style scoped>
 .card{
   background-color: #BD3F57;
+  
 }
+  
 </style>
