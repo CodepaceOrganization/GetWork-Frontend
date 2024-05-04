@@ -7,7 +7,7 @@ export default {
 
 <template>
   <div class="bg-gray-500 p-8 h-56rem ">
-    <h1 class="text-center my-4"> Planes accesibles para estudiantes </h1>
+    <h1 class="text-center my-4"> Accessible planes for students </h1>
     <div class="flex flex-row flex-wrap justify-content-center align-content-center gap-3 mx-8">
       <pv-card class=" card w-19rem p-2  px-5 text-white border-round-xl  ">
         <template #title>
