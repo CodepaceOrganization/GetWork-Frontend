@@ -30,21 +30,21 @@ export default {
       <img src="../../../assets/images/profile.png" alt="profile" class="w-30rem  "/>
     </div>
     <div class="text-4xl flex flex-column flex-wrap justify-content-center align-content-center">
-      <h2> Name:  {{this.getFullName }}</h2>
+      <h2> {{ $t('users.name') }}:  {{this.getFullName }}</h2>
       <h2> Dni:  {{this.getDni}}</h2>
-      <h2> PhoneNumber: {{this.getPhoneNumber}}</h2>
+      <h2> {{ $t('users.phone') }}: {{this.getPhoneNumber}}</h2>
     </div>
   </div>
-  <div class="mt-6 mx-6 flex flex-column my-5">
-    <h1 > Reserved tutorials :</h1>
-    <pv-card class="p-7 shadow-5 mt-6">
-      <template #title>
+<div class="mt-6 mx-6 flex flex-column my-5">
+  <h1 > {{ $t('users.reserved_title') }} </h1>
+  <pv-card class="p-7 shadow-5 mt-6">
+    <template #title>
 
-      </template>
-      <template #content>
-        <div class="text-center">
-          <h1>You have no reservations</h1>
-        </div>
+    </template>
+    <template #content>
+      <div class="text-center">
+        <h1>{{ $t('users.reserved_subtitle') }}</h1>
+      </div>
       </template>
     </pv-card>
   </div>

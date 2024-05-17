@@ -21,6 +21,7 @@ import 'primevue/resources/themes/mdc-light-indigo/theme.css';
 import ToastService         from 'primevue/toastservice';
 import ConfirmationService  from "primevue/confirmationservice";
 import DialogService        from "primevue/dialogservice";
+import i18n from "./i18n.js";
 
 // PrimeVue Components
 import DataTable        from "primevue/datatable";
@@ -32,6 +33,7 @@ import Toolbar          from "primevue/toolbar";
 import InputText        from "primevue/inputtext";
 import Textarea         from "primevue/textarea";
 import Button           from "primevue/button";
+import SelectButton from 'primevue/selectbutton';
 import Sidebar          from "primevue/sidebar";
 import Menu             from "primevue/menu";
 import Dialog           from "primevue/dialog";
@@ -53,7 +55,9 @@ createApp(App)
     .use(DialogService)
     .use(ConfirmationService)
     .use(ToastService)
+    .use(i18n)
     .component('pv-button',         Button)
+    .component('pv-select-button',  SelectButton)
     .component('pv-card',           Card)
     .component('pv-column',         Column)
     .component('pv-confirm-dialog', ConfirmDialog)

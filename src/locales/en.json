@@ -1,0 +1,87 @@
+{
+  "navbar": {
+    "technical-tests": "Technical Tests",
+    "contest": "Contests",
+    "simulacrum": "Simulacrums",
+    "tutors": "Tutors",
+    "users": "User"
+  },
+  "page-not-found": {
+    "title": "Page Not Found",
+    "content": "The path ",
+    "content2": ", is not a correct one. Please try with other path.",
+    "button": "Go to Home"
+  },
+  "technical-test": {
+    "title": "30 Days Of",
+    "subtitle": "Study Plan"
+  },
+    "contest": {
+        "title": "GetWork Contest",
+        "subtitle": "Global ranking"
+    },
+  "simulacrum": {
+    "l1": "Find a quiet place without distractions to concentrate.",
+    "l2": "Make sure you have enough uninterrupted time.",
+    "l3": "Have the necessary technical material at hand.",
+    "l4": "Maintain a positive and confident attitude.",
+    "l5": "Read all the instructions carefully before starting each exercise.",
+    "l6": "Use your time wisely and manage time limits if there are any.",
+    "l7": "Perform prior connection tests if it's a remote interview.",
+    "l8": "Practice clear and concise communication.",
+    "l9": "Accept challenges as opportunities to learn.",
+    "l10": "End simulacrum",
+    "l11": "Reflect on your performance after the simulacrum.",
+    "button": "Start",
+    "title": "Simulacrum of interviews"
+  },
+  "tutors": {
+    "time": "Select a schedule: ",
+    "button": "Reserve"
+  },
+    "users": {
+      "name": "Name",
+      "phone": "Phone",
+      "reserved_title": "Reserved Tutors",
+      "reserved_subtitle": "You have no reservations"
+    },
+  "plans": {
+    "title": "Plans",
+    "normal": {
+      "title": "NORMAL",
+      "price": "FREE",
+      "price_period": "/month",
+      "benefits": {
+        "limited_access": "Limited access to frequently asked questions in select interviews",
+        "basic_exercises": "Basic coding exercises",
+        "intro_tutorials": "Introductory tutorials on common interview topics"
+      },
+      "button": "Start"
+    },
+    "student": {
+      "title": "STUDENT",
+      "price": "S/35.00",
+      "price_period": "/month",
+      "benefits": {
+        "full_access": "Full access to frequently asked interview questions",
+        "unlimited_exercises": "Unlimited Practice Coding Exercises",
+        "mock_interviews": "Mock live interviews with experts"
+      },
+      "button": "Start"
+    },
+    "developer": {
+      "title": "DEVELOPER",
+      "price": "S/69.90",
+      "price_period": "/month",
+      "benefits": {
+        "full_access": "Full access to all frequently asked interview questions",
+        "advanced_exercises": "Advanced Practical Coding Exercises"
+      },
+      "button": "Start"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright ©; 2024 GetWork, inc All rights reserved.",
+    "developed_by": "Developed by GetWork"
+  }
+}
