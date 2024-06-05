@@ -7,10 +7,10 @@ export default {
 <template>
   <div class="footer">
     <div class="copyright">
-      <p>Copyright &copy; 2024 GetWork, inc All rights reserved.</p>
+      <p>{{ $t('footer.copyright') }}</p>
     </div>
     <div>
-      <p>Developed by GetWork</p>
+      <p>{{ $t('footer.developed_by') }}</p>
     </div>
   </div>
 </template>

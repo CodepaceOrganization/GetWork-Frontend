@@ -9,16 +9,19 @@
         <div class="flex-row">
           <router-link v-for="(item, index) in items" :key="item.label" v-slot="{ navigate, href }" :to="item.to" custom>
             <pv-button :href="href" class="p-button-text" :class="item.class" :style="{ fontSize: isDrawerOpen ? '16px' : '' }" @click="navigate">
-              {{ item.label }}
+              {{ $t(item.label) }}
             </pv-button>
           </router-link>
         </div>
+      </template>
+      <template #end>
         <div class="flex-row">
           <router-link v-for="(item, index) in itemsRight" :key="item.label" v-slot="{ navigate, href }" :to="item.to" custom>
             <pv-button :href="href" class="p-button-text" :class="item.class" :style="{ fontSize: isDrawerOpen ? '16px' : '' }" @click="navigate">
-              {{ item.label }}
+              {{ $t(item.label) }}
             </pv-button>
           </router-link>
+          <language-switcher></language-switcher>
         </div>
       </template>
     </pv-toolbar>
@@ -26,12 +29,12 @@
     <div class="drawer" :class="{ open: drawer}">
       <router-link v-for="(item, index) in items" :key="item.label" :to="item.to" @click="toggleDrawer">
         <pv-button class="p-button-text" :class="item.class" :style="{ marginBottom: isDrawerOpen ? '1rem' : '' }">
-          {{ item.label }}
+          {{ $t(item.label) }}
         </pv-button>
       </router-link>
       <router-link v-for="(item, index) in itemsRight" :key="item.label" :to="item.to" @click="toggleDrawer">
         <pv-button class="p-button-text" :class="item.class" :style="{ marginBottom: isDrawerOpen ? '1rem' : '' }">
-          {{ item.label }}
+          {{ $t(item.label) }}
         </pv-button>
       </router-link>
     </div>
@@ -40,21 +43,23 @@
 
 <script>
 import { useRouter } from 'vue-router';
+import LanguageSwitcher from "@/public/components/language-switcher.component.vue";
 
 export default {
   name: "header-content",
+  components: {LanguageSwitcher},
   data() {
     return {
       drawer: false,
       isDrawerOpen: false, // Agregamos una variable para rastrear si el drawer está abierto o cerrado
       items: [
-        { label: 'Technical Tests', to: '/technical-tests', class: 'item-1' },
-        { label: 'Contest', to: '/Contest-list', class: 'item-2' },
-        { label: 'Simulacrum', to: '/Simulacrum', class: 'item-3' },
-        { label: 'Tutors', to: '/Tutors', class: 'item-4' },
+        { label: 'navbar.technical-tests', to: '/technical-tests', class: 'item-1' },
+        { label: 'navbar.contest', to: '/Contest-list', class: 'item-2' },
+        { label: 'navbar.simulacrum', to: '/Simulacrum', class: 'item-3' },
+        { label: 'navbar.tutors', to: '/Tutors', class: 'item-4' },
       ],
       itemsRight: [
-        { label: 'User', to: '/User', class: 'item-5' },
+        { label: 'navbar.users', to: '/User', class: 'item-5' },
         { label: 'Premium', to: '/Premium', class: 'item-6' },
       ]
     }
@@ -76,6 +81,13 @@ export default {
 * {
   margin: 0;
   padding: 0;
+}
+
+.right-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
 }
 
 .toolbar {
@@ -108,15 +120,6 @@ export default {
 .flex-row .p-button-text {
   margin-right: 5rem;
   color: white;
-}
-
-.item-5 {
-  color: white !important;
-  margin-right: 1rem; /* Ajustar el margen entre los elementos */
-}
-
-.item-6 {
-  color: white !important;
 }
 
 .drawer {
