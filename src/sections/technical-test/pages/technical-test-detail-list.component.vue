@@ -24,7 +24,7 @@ export default {
           console.log(e);
         });
   },
-  computed: {
+    computed: {
     earrings() {
       return this.technicalTestDetails.filter(detail => detail.progress === "Earrings");
     },

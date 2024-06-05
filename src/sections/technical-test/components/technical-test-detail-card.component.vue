@@ -1,22 +1,50 @@
 <script>
 import {TechnicalTestDetail} from "@/sections/technical-test/model/technical-test-detail.entity.js";
+import {TechnicalTestApiService} from "@/sections/technical-test/services/technical-test-api.service.js";
 
 export default {
-  name: "technical-test-detail.component",
-  props: {
-    technicalTestDetail: TechnicalTestDetail,
-    index: Number
-  },
-  methods: {
-    getStatusColor(status) {
-      if (status >= 70) {
-        return 'status-green';
-      } else if (status >= 35) {
-        return 'status-orange';
-      } else {
-        return 'status-red';
-      }
-    }
+    name: "technical-test-detail.component",
+    props: {
+        technicalTestId: Number,
+        technicalTestDetail: TechnicalTestDetail,
+        technicalTestsDetailsService: null,
+        index: Number
+    },
+    data() {
+        return {
+            technicalTestId: 0,
+            technicalTestsDetailsService: null,
+        }
+    },
+    created() {
+        this.technicalTestId = this.$route.params.id;
+        this.technicalTestsDetailsService = new TechnicalTestApiService();
+        console.log(this.technicalTestId);
+    },
+    methods: {
+        getStatusColor(status) {
+          if (status >= 70) {
+            return 'status-green';
+          } else if (status >= 35) {
+            return 'status-orange';
+          } else {
+            return 'status-red';
+          }
+        },
+        async updateProgress(progress) {
+            const apiService = new TechnicalTestApiService();
+            try {
+                const response = await apiService.getTechnicalTestDetailById(this.technicalTestId,this.technicalTestDetail.id);
+                const detail = response.data;
+                detail.progress = progress;
+                const updateResponse = await apiService.updateProgress(this.technicalTestId, detail);
+                console.log(updateResponse.data);
+                this.technicalTestDetail.progress = progress;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
   }
 }
 </script>
@@ -26,18 +54,22 @@ export default {
     <template #content>
       <div class="container">
         <div class="column">
-          <div class="left-container">
-            <p>{{index}}. {{ technicalTestDetail.description }}</p>
-          </div>
-          <div v-if="technicalTestDetail.progress === 'Earrings'" class="right-container">
-            <p :class="technicalTestDetail.difficulty.toLowerCase()">{{ technicalTestDetail.difficulty }}</p>
-          </div>
-          <div v-else-if="technicalTestDetail.progress === 'InProgress'" class="right-container">
-            <p :class="getStatusColor(technicalTestDetail.status)">{{ technicalTestDetail.status }}/100</p>
-          </div>
-          <div v-else-if="technicalTestDetail.progress === 'Done'" class="right-container">
-            <p class="status-green">{{ technicalTestDetail.progress }}</p>
-          </div>
+            <div class="left-container">
+                <button v-if="technicalTestDetail.progress === 'InProgress'" @click="updateProgress('Earrings')"><i class="pi pi-chevron-left"></i></button>
+                <button v-if="technicalTestDetail.progress === 'Done'" @click="updateProgress('InProgress')"><i class="pi pi-chevron-left"></i></button>
+                <p>{{index}}. {{ technicalTestDetail.description }}</p>
+            </div>
+            <div v-if="technicalTestDetail.progress === 'Earrings'" class="right-container">
+                <p :class="technicalTestDetail.difficulty.toLowerCase()">{{ technicalTestDetail.difficulty }}</p>
+                <button v-if="technicalTestDetail.progress === 'Earrings'" @click="updateProgress('InProgress')"><i class="pi pi-chevron-right"></i></button>
+            </div>
+            <div v-else-if="technicalTestDetail.progress === 'InProgress'" class="right-container">
+                <p :class="getStatusColor(technicalTestDetail.status)">{{ technicalTestDetail.status }}/100</p>
+                <button v-if="technicalTestDetail.progress === 'InProgress'" @click="updateProgress('Done')"><i class="pi pi-chevron-right"></i></button>
+            </div>
+            <div v-else-if="technicalTestDetail.progress === 'Done'" class="right-container">
+                <p class="status-green">{{ technicalTestDetail.progress }}</p>
+            </div>
         </div>
       </div>
     </template>
@@ -96,5 +128,14 @@ export default {
   height: auto;
   min-height: 50px;
   border-radius: 10px;
+}
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 </style>
