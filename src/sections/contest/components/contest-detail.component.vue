@@ -79,7 +79,7 @@ export default {
 
 <style scoped>
 
-.goal-card{
+.goal-card {
   background-color: #ffffff;
   padding: 14px;
   word-wrap: break-word;
@@ -92,47 +92,29 @@ export default {
 }
 
 .about {
-  font-size: 200%;
+  font-size: 160%;
+  margin-right: 40%;
   font-weight: bold;
-  margin-right: 50%;
-  margin-bottom: -20%;
   text-align: justify;
 }
 
-.about-course{
+.about-course {
   color: #1A1A1A;
 }
 
 .container-contest-detail-about {
-  margin-left: 2%;
+  margin: 2%;
 }
 
 .title-goals {
   font-size: 33px;
-  margin-left: 78%;
-  margin-top: -24%;
-  margin-bottom: 1.5%;
+  text-align: center;
+  margin: 2% 15%;
 }
 
-.card-details1 {
-  margin-left: 36%;
-  margin-right: 10%;
-  margin-top: -20%;
+.card-details1, .card-details2, .card-details3 {
   text-align: justify;
-}
-
-.card-details2 {
-  margin-left: 38%;
-  margin-right: 7%;
-  margin-top: -25%;
-  text-align: justify;
-}
-
-.card-details3 {
-  margin-left: 30%;
-  margin-right: 5%;
-  margin-top: -21%;
-  text-align: justify;
+  margin: 0 10%;
 }
 
 .goals-card {
@@ -140,18 +122,13 @@ export default {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  width: 30%;
-  height: 50%;
-  transition: transform 0.3s;
-  margin-bottom: 4%;
-  margin-left: 65%;
-  margin-top: -0%;
+  width: 80%;
+  margin: 2% auto;
   background-color: #BD3F57;
   padding: 10px;
-  
 }
 
-.introduction-card{
+.introduction-card, .development-card, .test-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 10px;
   display: flex;
@@ -159,43 +136,77 @@ export default {
   transition: transform 0.3s;
   font-size: 15px;
   font-weight: bold;
-  margin-left: 4%;
-  margin-bottom: 4%;
+  width: 80%;
+  margin: 2% auto;
 }
 
-.development-card{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  transition: transform 0.3s;
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 4rem;
-  margin-left: 37%;
-  margin-top:-13%;
-}
-
-.test-card{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  transition: transform 0.3s;
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 4%;
-  margin-left: 70%;
-  margin-top:-12.5%;
-}
-
-
-.image-container{
+.image-container {
   width: 100%;
   height: 100%;
-  margin-left: 1.5rem;
-  margin-top: -3.5rem;
-  object-fit: Scale-down;
+  margin: 0;
+  object-fit: scale-down;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .title-goals {
+    margin-left: 78%;
+    margin-top: -24%;
+  }
+
+  .goals-card {
+    width: 30%;
+    height: 50%;
+    margin-left: 65%;
+  }
+
+  .introduction-card {
+    margin-left: 4%;
+    margin-bottom: 4%;
+  }
+
+  .development-card {
+    margin-bottom: 4rem;
+    margin-left: 37%;
+    margin-top: -13%;
+  }
+
+  .test-card {
+    margin-left: 70%;
+    margin-top: -12.5%;
+  }
+
+  .card-details1 {
+    margin-left: 36%;
+    margin-right: 10%;
+    margin-top: -20%;
+  }
+
+  .card-details2 {
+    margin-left: 38%;
+    margin-right: 7%;
+    margin-top: -25%;
+  }
+
+  .card-details3 {
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-top: -21%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    font-size: 150%;
+  }
+
+  .title-goals {
+    font-size: 28px;
+  }
+
+  .card-details1, .card-details2, .card-details3 {
+    margin: 0 5%;
+  }
 }
 
 </style>
