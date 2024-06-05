@@ -80,7 +80,7 @@
       "id": 1,
       "description": "Create a function in C++ that finds the most repeated number within an array of integers.",
       "difficulty": "Medium",
-      "progress": "Done",
+      "progress": "Earrings",
       "status": 0
     },
     {
@@ -94,21 +94,21 @@
       "id": 3,
       "description": "Develop a function in C++ that calculates the average of a set of numbers entered by the user.",
       "difficulty": "Medium",
-      "progress": "Earrings",
+      "progress": "Done",
       "status": 0
     },
     {
       "id": 4,
       "description": "Develop a function in C++ that calculates the factorial of a positive integer recursively.",
       "difficulty": "Medium",
-      "progress": "Earrings",
+      "progress": "InProgress",
       "status": 0
     },
     {
       "id": 5,
       "description": "Develop a function in C++ that calculates the factorial of a positive integer recursively.",
       "difficulty": "Easy",
-      "progress": "Earrings",
+      "progress": "InProgress",
       "status": 0
     },
     {
@@ -213,14 +213,14 @@
       "id": 20,
       "description": "Create a function in C that calculates the power of a given number using recursion.",
       "difficulty": "Hard",
-      "progress": "InProgress",
+      "progress": "Earrings",
       "status": 100
     },
     {
       "id": 21,
       "description": "Code a function in C++ that performs multiplication of two square matrices of a specific size.",
       "difficulty": "Hard",
-      "progress": "InProgress",
+      "progress": "Done",
       "status": 100
     },
     {
