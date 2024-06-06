@@ -1,5 +1,5 @@
 <script>
-import technicalTestDetailCardComponent from "@/sections/technical-test/components/technical-test-detail-card.component.vue";
+import technicalTestDetailCardComponent from "@/sections/technical-test/components/technical-task-card.component.vue";
 import {TechnicalTestApiService} from "@/sections/technical-test/services/technical-test-api.service.js";
 
 export default {
