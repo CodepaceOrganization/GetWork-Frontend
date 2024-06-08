@@ -32,6 +32,50 @@ export default {
 
 <style scoped>
 
+@media (min-width: 1200px) {
+  .custom-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 1.5rem;
+    margin-left: 8.5rem;
+  }
+
+  .card-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .idContainer {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .image-container {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .nameContainer {
+    font-size: 16px;
+    color: black;
+    margin-right: 10px;
+  }
+}
 .custom-card {
   display: flex;
   align-items: center;
@@ -75,6 +119,7 @@ export default {
   margin-right: 10px;
 }
 
+/* Estilos para pantallas pequeñas (menos de 600px) */
 @media (max-width: 600px) {
   .custom-card {
     flex-direction: column;
@@ -104,6 +149,39 @@ export default {
   .nameContainer {
     font-size: 14px;
     margin-right: 0;
+  }
+}
+
+/* Estilos para pantallas medianas (entre 600px y 1200px) */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .custom-card {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .card-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .idContainer {
+    font-size: 18px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .image-container {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .nameContainer {
+    font-size: 14px;
+    margin-right: 5px;
   }
 }
 

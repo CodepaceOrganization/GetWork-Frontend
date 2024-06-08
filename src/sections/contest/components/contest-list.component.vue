@@ -100,4 +100,42 @@ p {
   margin-top: 1.5rem;
   margin-left: 10rem;
 }
+
+/* Estilos para pantallas pequeñas (menos de 600px) */
+@media (max-width: 600px) {
+  .coursesContent {
+    flex-direction: column;
+  }
+
+  .coursesContainer,
+  .rankinsContainer {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .custom-card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Estilos para pantallas medianas (entre 600px y 1200px) */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .coursesContent {
+    flex-direction: row;
+  }
+
+  .coursesContainer,
+  .rankinsContainer {
+    width: 80%;
+    margin-right: 10%;
+  }
+
+  .custom-card {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 </style>

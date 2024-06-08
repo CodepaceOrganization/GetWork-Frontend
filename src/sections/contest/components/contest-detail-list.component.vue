@@ -78,5 +78,33 @@ p {
   margin-bottom: 2rem;
 }
 
+/* Estilos para pantallas pequeñas (menos de 600px) */
+@media (max-width: 600px) {
+  .coursesContent,
+  .coursesDetailContent {
+    flex-direction: column;
+  }
+
+  .coursesContainer,
+  .coursesDetailContainer {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Estilos para pantallas medianas (entre 600px y 1200px) */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .coursesContent,
+  .coursesDetailContent {
+    flex-direction: row;
+  }
+
+  .coursesContainer,
+  .coursesDetailContainer {
+    width: 80%;
+    margin-right: 10%;
+  }
+}
+
 
 </style>

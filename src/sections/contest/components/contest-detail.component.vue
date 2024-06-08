@@ -122,7 +122,7 @@ export default {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 60%;
   margin: 2% auto;
   background-color: #BD3F57;
   padding: 10px;
@@ -147,65 +147,46 @@ export default {
   object-fit: scale-down;
 }
 
-/* Media Queries */
-@media (min-width: 768px) {
-  .title-goals {
-    margin-left: 78%;
-    margin-top: -24%;
+@media (max-width: 600px) {
+  .container-contest-detail {
+    flex-direction: column;
   }
 
-  .goals-card {
-    width: 30%;
-    height: 50%;
-    margin-left: 65%;
-  }
-
-  .introduction-card {
-    margin-left: 4%;
-    margin-bottom: 4%;
-  }
-
-  .development-card {
-    margin-bottom: 4rem;
-    margin-left: 37%;
-    margin-top: -13%;
-  }
-
+  .goals-card,
+  .introduction-card,
+  .development-card,
   .test-card {
-    margin-left: 70%;
-    margin-top: -12.5%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  .card-details1 {
-    margin-left: 36%;
-    margin-right: 10%;
-    margin-top: -20%;
-  }
-
-  .card-details2 {
-    margin-left: 38%;
-    margin-right: 7%;
-    margin-top: -25%;
-  }
-
+  .card-details1,
+  .card-details2,
   .card-details3 {
-    margin-left: 30%;
-    margin-right: 5%;
-    margin-top: -21%;
+    margin: 0 5%;
   }
 }
 
-@media (max-width: 767px) {
-  .about {
-    font-size: 150%;
+/* Estilos para pantallas medianas (entre 600px y 1200px) */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .container-contest-detail {
+    flex-direction: row;
   }
 
-  .title-goals {
-    font-size: 28px;
+  .goals-card,
+  .introduction-card,
+  .development-card,
+  .test-card {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
-  .card-details1, .card-details2, .card-details3 {
-    margin: 0 5%;
+  .card-details1,
+  .card-details2,
+  .card-details3 {
+    margin: 0 10%;
   }
 }
 
