@@ -8,7 +8,8 @@ import profileManagementComponent from "@/sections/profile-management/components
 import tutorsComponent from "@/sections/tutors/components/tutors.component.vue";
 import technicalTestListComponent from "@/sections/technical-test/pages/technical-test-list.component.vue";
 import technicalTestDetailListComponent from "@/sections/technical-test/pages/technical-test-detail-list.component.vue";
-
+import contestDetailListComponent from "@/sections/contest/components/contest-detail-list.component.vue";
+import PageNotFoundComponent from "@/public/pages/page-not-found.component.vue";
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -19,7 +20,9 @@ const router = createRouter({
         { path: '/User', component: profileManagementComponent, meta: { title: 'Profile Management' } },
         { path: '/Tutors', component: tutorsComponent, meta: { title: 'Tutors' } },
         { path: '/', redirect: '/technical-tests' },
-        {path: '/details/:id', name: 'technical-test-details', component: technicalTestDetailListComponent,props: true }
+        {path: '/details/:id', name: 'technical-test-details', component: technicalTestDetailListComponent,props: true },
+        {path: '/courses/:id', name: 'contest-details', component: contestDetailListComponent,props: true },
+        { path: '/:catchAll(.*)', component: PageNotFoundComponent, meta: { title: 'Page Not Found' } }
     ]
 });
 

@@ -39,7 +39,7 @@ export default {
 <template>
     <div class="container-technical-test">
             <div class="container-technical-test-list">
-                <h2 class="title">30 days of</h2>
+                <h2 class="title">{{ $t('technical-test.title') }}</h2>
                 <div class="card-container">
                     <router-link
                         v-for="technicalTest in technicalTests"
@@ -50,7 +50,7 @@ export default {
                 </div>
             </div>
             <div class="container-technical-test-list">
-                <h2 class="title">Study Plan</h2>
+                <h2 class="title">{{ $t('technical-test.subtitle') }}</h2>
                 <div class="card-container">
                   <technical-test-card-component class="technical-test-card"
                                                  v-for="technicalTest in technicalTestsStudies"

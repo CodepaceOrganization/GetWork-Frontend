@@ -75,5 +75,36 @@ export default {
   margin-right: 10px;
 }
 
+@media (max-width: 600px) {
+  .custom-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .idContainer {
+    font-size: 18px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .image-container {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nameContainer {
+    font-size: 14px;
+    margin-right: 0;
+  }
+}
 
 </style>

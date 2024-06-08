@@ -1,0 +1,87 @@
+{
+  "navbar": {
+    "technical-tests": "Pruebas técnicas",
+    "contest": "Concursos",
+    "simulacrum": "Simulacros",
+    "tutors": "Tutores",
+    "users": "Usuario"
+  },
+  "page-not-found": {
+    "title": "Página no encontrada",
+    "content": "La ruta ",
+    "content2": ", no es correcta. Por favor, intenta con otra ruta.",
+    "button": "Ir a la página de inicio"
+  },
+  "technical-test": {
+    "title": "30 Días de",
+    "subtitle": "Plan de estudio"
+  },
+  "contest": {
+    "title": "Concurso GetWork",
+    "subtitle": "Clasificación mundial"
+  },
+  "simulacrum": {
+    "l1": "Encuentra un lugar tranquilo y sin distracciones para concentrarte.",
+    "l2": "Asegúrate de tener suficiente tiempo sin interrupciones.",
+    "l3": "Ten a mano el material técnico necesario.",
+    "l4": "Mantén una actitud positiva y de confianza.",
+    "l5": "Lee cuidadosamente todas las instrucciones antes de comenzar cada ejercicio.",
+    "l6": "Utiliza tu tiempo sabiamente y gestiona los límites de tiempo si los hay.",
+    "l7": "Realiza pruebas previas de conexión si es una entrevista remota.",
+    "l8": "Practica la comunicación clara y concisa.",
+    "l9": "Acepta desafíos como oportunidades para aprender.",
+    "l10": "Finalizar simulacro",
+    "l11": "Reflexiona sobre tu desempeño después del simulacro.",
+    "button": "Empezar",
+    "title": "Simulacro de entrevistas"
+  },
+  "tutors": {
+    "time": "Selecciona un horario: ",
+    "button": "Reservar"
+  },
+  "users": {
+    "name": "Nombre",
+    "phone": "Celular",
+    "reserved_title": "Tutorías reservadas",
+    "reserved_subtitle": "No tienes reservas"
+  },
+  "plans": {
+    "title": "Planes",
+    "normal": {
+      "title": "NORMAL",
+      "price": "GRATIS",
+      "price_period": "/mes",
+      "benefits": {
+        "limited_access": "Acceso limitado a preguntas frecuentes en entrevistas seleccionadas",
+        "basic_exercises": "Ejercicios de codificación básicos",
+        "intro_tutorials": "Tutoriales introductorios sobre temas comunes de entrevistas"
+      },
+      "button": "Empezar"
+    },
+    "student": {
+      "title": "ESTUDIANTE",
+      "price": "S/35.00",
+      "price_period": "/mes",
+      "benefits": {
+        "full_access": "Acceso completo a preguntas frecuentes de entrevistas",
+        "unlimited_exercises": "Ejercicios de codificación práctica ilimitados",
+        "mock_interviews": "Entrevistas simuladas en vivo con expertos"
+      },
+      "button": "Empezar"
+    },
+    "developer": {
+      "title": "DESARROLLADOR",
+      "price": "S/69.90",
+      "price_period": "/mes",
+      "benefits": {
+        "full_access": "Acceso completo a todas las preguntas frecuentes de entrevistas",
+        "advanced_exercises": "Ejercicios de codificación práctica avanzados"
+      },
+      "button": "Empezar"
+    }
+  },
+  "footer": {
+    "copyright": "Derechos de autor ©; 2024 GetWork, inc Todos los derechos reservados.",
+    "developed_by": "Desarrollado por GetWork"
+  }
+}

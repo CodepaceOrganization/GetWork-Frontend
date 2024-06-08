@@ -56,7 +56,7 @@ export default {
         <template #content>
           <div class="description">{{ card.description }}</div>
           <div class="times-container">
-            <label for="time">Selecciona un horario:</label>
+            <label for="time">{{ $t('tutors.time') }}</label>
             <select id="time" v-model="selectedTime" @change="reserveTime(card.id)">
               <option v-for="time in card.times" :key="time">{{ time }}</option>
             </select>
@@ -64,8 +64,7 @@ export default {
         </template>
         <template #footer>
           <div class="button-container">
-            <pv-button label="Reservar" class="btn_reservar"/>
-          </div>
+            <pv-button :label="$t('tutors.button')" class="btn_reservar"/>          </div>
         </template>
       </pv-card>
     </div>

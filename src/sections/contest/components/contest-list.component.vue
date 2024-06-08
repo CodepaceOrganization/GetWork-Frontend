@@ -43,18 +43,25 @@ export default {
     <img class="imagen"
          src="https://github.com/CodepaceOrganization/GetWork-Frontend/assets/142842509/b4ce5e39-1ee8-4e16-8d93-c84248ca8cec"
          alt="contest">
-    <p>GetWork Contest</p>
+    <p>{{ $t('contest.title') }}</p>
   </div>
   <div class="coursesContent">
     <div class="coursesContainer">
-      <section-contest v-for="course in courses" :key="course.id" :course="course"></section-contest>
+      <router-link v-for="course in courses" 
+                   :key="course.id" 
+                   :to="'/courses/' + course.id">
+        <section-contest class="contest-card" :course="course"></section-contest>
+      </router-link>
     </div>
+    
+    
     <div class="rankinsContainer">
       <h1 class="title">
-        Global Ranking
+        <p>{{ $t('contest.subtitle') }}</p>
       </h1>
       <contest-rankin v-for="ranking in rankings" :key="ranking.id" :ranking="ranking"></contest-rankin>
     </div>
+    
   </div>
 </template>
 

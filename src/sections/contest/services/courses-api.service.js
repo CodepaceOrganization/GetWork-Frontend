@@ -8,6 +8,11 @@ export class CoursesApiService{
     getAllCourses() {
         return http.get('/courses');
     }
+
+    getCourse(id) {
+        return http.get(`/courses/${id}`);
+    }
+    
     getRanking(){
         return http.get('/ranking');
     }
