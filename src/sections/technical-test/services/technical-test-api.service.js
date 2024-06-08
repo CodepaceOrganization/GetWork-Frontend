@@ -22,7 +22,12 @@ export class TechnicalTestApiService {
     update(id, tutorialResource) {
         return http.put(`/technical-tests/${id}`, tutorialResource);
     }
-
+    getTechnicalTestDetailById(technicalTestId, technicalTaskId) {
+        return http.get(`/details-${technicalTestId}/${technicalTaskId}`);
+    }
+    updateProgress(technicalTestId, detail) {
+        return http.put(`/details-${technicalTestId}/${detail.id}`, detail);
+    }
     delete(id) {
         return http.delete(`/technical-tests/${id}`);
     }

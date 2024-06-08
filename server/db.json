@@ -16,177 +16,7 @@
       "id": 3,
       "title": "30 Days of C++",
       "description": "Ace Coding Interview with 75 Qs",
-      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/7537b1fc-20ba-4513-ac87-d6100af864eb",
-      "details": [
-        {
-          "id": 1,
-          "description": "Create a function in C++ that finds the most repeated number within an array of integers.",
-          "difficulty": "Medium",
-          "progress": "Earrings",
-          "status": 0
-        },
-        {
-          "id": 2,
-          "description": "Implements an algorithm in C++ to sort an array of numbers in ascending order without using STL functions.",
-          "difficulty": "Easy",
-          "progress": "Earrings",
-          "status": 0
-        },
-        {
-          "id": 3,
-          "description": "Develop a function in C++ that calculates the average of a set of numbers entered by the user.",
-          "difficulty": "Medium",
-          "progress": "Earrings",
-          "status": 0
-        },
-        {
-          "id": 4,
-          "description": "Develop a function in C++ that calculates the factorial of a positive integer recursively.",
-          "difficulty": "Medium",
-          "progress": "Earrings",
-          "status": 0
-        },
-        {
-          "id": 5,
-          "description": "Develop a function in C++ that calculates the factorial of a positive integer recursively.",
-          "difficulty": "Easy",
-          "progress": "Earrings",
-          "status": 0
-        },
-        {
-          "id": 6,
-          "description": "Create a function in C that calculates the power of a given number using recursion.",
-          "difficulty": "Medium",
-          "progress": "Earrings",
-          "status": 0
-        },
-        {
-          "id":7,
-          "description": "Implement a function in C++ that adds two arrays of the same size and displays the result.",
-          "difficulty": "Medium",
-          "progress": "InProgress",
-          "status": 70
-        },
-        {
-          "id":8,
-          "description": "Develop a C++ program that compresses a string of characters using the RLE method.",
-          "difficulty": "Medium",
-          "progress": "InProgress",
-          "status": 90
-        },
-        {
-          "id":9,
-          "description": "Create a C++ program that generates and prints the first n rows of Pascal's Triangle.",
-          "difficulty": "Hard",
-          "progress": "InProgress",
-          "status": 50
-        },
-        {
-          "id":10,
-          "description": "Create a function in C++ that calculates the area of a triangle using the length of its sides and Heron's formula.",
-          "difficulty": "Easy",
-          "progress": "InProgress",
-          "status": 40
-        },
-        {
-          "id":11,
-          "description": "Create a function in C that calculates the power of a given number using recursion.",
-          "difficulty": "Medium",
-          "progress": "InProgress",
-          "status": 35
-        },
-        {
-          "id":12,
-          "description": "Code a function in C++ that performs multiplication of two square matrices of a specific size.",
-          "difficulty": "Easy",
-          "progress": "InProgress",
-          "status": 85
-        },
-        {
-          "id":13,
-          "description": "Develop an algorithm in C++ to sort an array of numbers in descending order without using predefined functions.",
-          "difficulty": "Medium",
-          "progress": "InProgress",
-          "status": 20
-        },
-        {
-          "id":14,
-          "description": "Write a program that finds the largest number in an array of integers.",
-          "difficulty": "Hard",
-          "progress": "InProgress",
-          "status": 75
-        },
-        {
-          "id":15,
-          "description": "Write a function that determines whether a given number is a palindrome.",
-          "difficulty": "Easy",
-          "progress": "InProgress",
-          "status": 65
-        },
-        {
-          "id": 16,
-          "description": "Implement a function in C++ that adds two arrays of the same size and displays the result.",
-          "difficulty": "Easy",
-          "progress": "Done",
-          "status": 100
-        },
-        {
-          "id": 17,
-          "description": "Develop a C++ program that compresses a string of characters using the RLE method.",
-          "difficulty": "Easy",
-          "progress": "Done",
-          "status": 100
-        },
-        {
-          "id": 18,
-          "description": "Create a C++ program that generates and prints the first n rows of Pascal's Triangle.",
-          "difficulty": "Medium",
-          "progress": "Done",
-          "status": 100
-        },
-        {
-          "id": 19,
-          "description": "Create a function in C++ that calculates the area of a triangle using the length of its sides and Heron's formula.",
-          "difficulty": "Medium",
-          "progress": "Done",
-          "status": 100
-        },
-        {
-          "id": 20,
-          "description": "Create a function in C that calculates the power of a given number using recursion.",
-          "difficulty": "Hard",
-          "progress": "Done",
-          "status": 100
-        },
-        {
-          "id": 21,
-          "description": "Code a function in C++ that performs multiplication of two square matrices of a specific size.",
-          "difficulty": "Hard",
-          "progress": "Done",
-          "status": 100
-        },
-        {
-          "id": 22,
-          "description": "Develop an algorithm in C++ to sort an array of numbers in descending order without using predefined functions.",
-          "difficulty": "Easy",
-          "progress": "Done",
-          "status": 100
-        },
-        {
-          "id": 23,
-          "description": "Write a program that finds the largest number in an array of integers.",
-          "difficulty": "Medium",
-          "progress": "Done",
-          "status": 100
-        },
-        {
-          "id": 24,
-          "description": "Write a function that determines whether a given number is a palindrome.",
-          "difficulty": "Hard",
-          "progress": "InProgress",
-          "status": 100
-        }
-      ]
+      "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/7537b1fc-20ba-4513-ac87-d6100af864eb"
     },
     {
       "id": 4,
@@ -207,7 +37,6 @@
       "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/468c15d3-c548-4d8f-b256-385338542546"
     }
   ],
-
   "technical-tests-study-plan": [
     {
       "id": 1,
@@ -246,80 +75,174 @@
       "image": "https://github.com/CodepaceOrganization/Informes/assets/130580982/ab5617ce-664a-4517-97c8-275fdb3d0570"
     }
   ],
-  "courses": [
+  "details-3": [
     {
       "id": 1,
-      "title": "Weekly Contest 392",
-      "date": "Apr 6 2024 8:30 pm",
-      "image": "https://github.com/CodepaceOrganization/GetWork-Frontend/assets/142842509/37dbe0d4-c7d1-4608-bf35-f9f6eebc568f"
+      "description": "Create a function in C++ that finds the most repeated number within an array of integers.",
+      "difficulty": "Medium",
+      "progress": "Earrings",
+      "status": 0
     },
     {
       "id": 2,
-      "title": "Weekly Contest 391",
-      "date": "Apr 5 2024 8:30 pm",
-      "image": "https://github.com/CodepaceOrganization/GetWork-Frontend/assets/142842509/37dbe0d4-c7d1-4608-bf35-f9f6eebc568f"
+      "description": "Implements an algorithm in C++ to sort an array of numbers in ascending order without using STL functions.",
+      "difficulty": "Easy",
+      "progress": "Done",
+      "status": 0
     },
     {
       "id": 3,
-      "title": "Weekly Contest 390",
-      "date": "Apr 4 2024 8:30 pm",
-      "image": "https://github.com/CodepaceOrganization/GetWork-Frontend/assets/142842509/37dbe0d4-c7d1-4608-bf35-f9f6eebc568f"
+      "description": "Develop a function in C++ that calculates the average of a set of numbers entered by the user.",
+      "difficulty": "Medium",
+      "progress": "Done",
+      "status": 0
     },
     {
       "id": 4,
-      "title": "Weekly Contest 389",
-      "date": "Apr 2 2024 8:30 pm",
-      "image": "https://github.com/CodepaceOrganization/GetWork-Frontend/assets/142842509/713a8e62-5d85-4718-8b51-18fc95e9b9d6"
-    }
-  ],
-  "ranking": [
-    {
-      "id": 1,
-      "name": "andresvz",
-      "rating": "3976",
-      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/eac96852-51fa-471b-9878-b2bb5b2f73d7"
-    },
-    {
-      "id": 2,
-      "name": "jujo_21",
-      "rating": "3950",
-      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/daaad059-a201-44b8-a9f1-c8e524b6ab27"
-    },
-    {
-      "id": 3,
-      "name": "hzl11",
-      "rating": "3940",
-      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/4ec4ab7b-a5e9-4594-8609-1ac71974407f"
-    },
-    {
-      "id": 4,
-      "name": "diego12321",
-      "rating": "3933",
-      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/d46db6b4-e3f7-4a6c-a2df-1324ec07514e"
+      "description": "Develop a function in C++ that calculates the factorial of a positive integer recursively.",
+      "difficulty": "Medium",
+      "progress": "InProgress",
+      "status": 0
     },
     {
       "id": 5,
-      "name": "romtues21",
-      "rating": "3859",
-      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/3b6dd1a3-bfa6-4743-a176-05fdc27186ca"
+      "description": "Develop a function in C++ that calculates the factorial of a positive integer recursively.",
+      "difficulty": "Easy",
+      "progress": "InProgress",
+      "status": 0
     },
     {
       "id": 6,
-      "name": "loli12",
-      "rating": "3820",
-      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/daaad059-a201-44b8-a9f1-c8e524b6ab27"
+      "description": "Create a function in C that calculates the power of a given number using recursion.",
+      "difficulty": "Medium",
+      "progress": "Earrings",
+      "status": 0
     },
     {
       "id": 7,
-      "name": "dalereg",
-      "rating": "320",
-      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/48e2d551-4da1-4154-a441-288cfbc2f0fc"
+      "description": "Implement a function in C++ that adds two arrays of the same size and displays the result.",
+      "difficulty": "Medium",
+      "progress": "Earrings",
+      "status": 70
     },
     {
       "id": 8,
-      "name": "sebascp2005",
-      "rating": "100",
-      "image": "https://github.com/CodepaceOrganization/Informes/assets/142842509/0716a226-211f-497d-95b4-5b120130d7b1"
+      "description": "Develop a C++ program that compresses a string of characters using the RLE method.",
+      "difficulty": "Medium",
+      "progress": "Earrings",
+      "status": 90
+    },
+    {
+      "id": 9,
+      "description": "Create a C++ program that generates and prints the first n rows of Pascal's Triangle.",
+      "difficulty": "Hard",
+      "progress": "Earrings",
+      "status": 50
+    },
+    {
+      "id": 10,
+      "description": "Create a function in C++ that calculates the area of a triangle using the length of its sides and Heron's formula.",
+      "difficulty": "Easy",
+      "progress": "Earrings",
+      "status": 40
+    },
+    {
+      "id": 11,
+      "description": "Create a function in C that calculates the power of a given number using recursion.",
+      "difficulty": "Medium",
+      "progress": "Earrings",
+      "status": 35
+    },
+    {
+      "id": 12,
+      "description": "Code a function in C++ that performs multiplication of two square matrices of a specific size.",
+      "difficulty": "Easy",
+      "progress": "Earrings",
+      "status": 85
+    },
+    {
+      "id": 13,
+      "description": "Develop an algorithm in C++ to sort an array of numbers in descending order without using predefined functions.",
+      "difficulty": "Medium",
+      "progress": "Earrings",
+      "status": 20
+    },
+    {
+      "id": 14,
+      "description": "Write a program that finds the largest number in an array of integers.",
+      "difficulty": "Hard",
+      "progress": "Earrings",
+      "status": 75
+    },
+    {
+      "id": 15,
+      "description": "Write a function that determines whether a given number is a palindrome.",
+      "difficulty": "Easy",
+      "progress": "Earrings",
+      "status": 65
+    },
+    {
+      "id": 16,
+      "description": "Implement a function in C++ that adds two arrays of the same size and displays the result.",
+      "difficulty": "Easy",
+      "progress": "Earrings",
+      "status": 100
+    },
+    {
+      "id": 17,
+      "description": "Develop a C++ program that compresses a string of characters using the RLE method.",
+      "difficulty": "Easy",
+      "progress": "Done",
+      "status": 100
+    },
+    {
+      "id": 18,
+      "description": "Create a C++ program that generates and prints the first n rows of Pascal's Triangle.",
+      "difficulty": "Medium",
+      "progress": "Done",
+      "status": 100
+    },
+    {
+      "id": 19,
+      "description": "Create a function in C++ that calculates the area of a triangle using the length of its sides and Heron's formula.",
+      "difficulty": "Medium",
+      "progress": "Done",
+      "status": 100
+    },
+    {
+      "id": 20,
+      "description": "Create a function in C that calculates the power of a given number using recursion.",
+      "difficulty": "Hard",
+      "progress": "Earrings",
+      "status": 100
+    },
+    {
+      "id": 21,
+      "description": "Code a function in C++ that performs multiplication of two square matrices of a specific size.",
+      "difficulty": "Hard",
+      "progress": "Done",
+      "status": 100
+    },
+    {
+      "id": 22,
+      "description": "Develop an algorithm in C++ to sort an array of numbers in descending order without using predefined functions.",
+      "difficulty": "Easy",
+      "progress": "InProgress",
+      "status": 100
+    },
+    {
+      "id": 23,
+      "description": "Write a program that finds the largest number in an array of integers.",
+      "difficulty": "Medium",
+      "progress": "InProgress",
+      "status": 100
+    },
+    {
+      "id": 24,
+      "description": "Write a function that determines whether a given number is a palindrome.",
+      "difficulty": "Hard",
+      "progress": "InProgress",
+      "status": 100
     }
   ],
   "detail-course": [
