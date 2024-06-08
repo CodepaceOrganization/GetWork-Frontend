@@ -79,7 +79,7 @@ export default {
   .custom-card {
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px;
+    padding: 9px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
