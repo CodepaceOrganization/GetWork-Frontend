@@ -7,7 +7,7 @@ import plansComponent from "@/sections/plans/components/plans.component.vue";
 import profileManagementComponent from "@/sections/profile-management/components/profile-management.component.vue";
 import tutorsComponent from "@/sections/tutors/components/tutors.component.vue";
 import technicalTestListComponent from "@/sections/technical-test/pages/technical-test-list.component.vue";
-import technicalTestDetailListComponent from "@/sections/technical-test/pages/technical-test-detail-list.component.vue";
+import technicalTestDetailListComponent from "@/sections/technical-test/pages/technical-test-list.component.vue";
 import contestDetailListComponent from "@/sections/contest/components/contest-detail-list.component.vue";
 import PageNotFoundComponent from "@/public/pages/page-not-found.component.vue";
 const router = createRouter({

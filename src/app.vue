@@ -4,11 +4,12 @@ import HeaderContent from "@/public/components/header-content.component.vue";
 import {CoursesApiService} from "@/sections/contest/services/courses-api.service.js";
 import ContestList from "@/sections/contest/components/contest-list.component.vue";
 import {Course} from "@/sections/contest/model/course.entity.js";
+import ProfileManagement from "@/sections/profile-management/components/profile-management.component.vue";
 
 
 export default{
 name: 'Main',
-components: {HeaderContent, FooterContent, ContestList},
+components: {ProfileManagement, HeaderContent, FooterContent, ContestList},
   data() {
     return {
       //sidebarVisible: false,
