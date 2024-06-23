@@ -1,19 +1,19 @@
 import axios from "axios";
 
 const http = axios.create({
-    baseURL: 'https://my-json-server.typicode.com/CodepaceOrganization/Datos-getwork-',
+    baseURL: 'http://localhost:5030/api/v1',
 });
 
 export class CoursesApiService{
     getAllCourses() {
-        return http.get('/courses');
+        return http.get('/contest');
     }
 
     getCourse(id) {
-        return http.get(`/courses/${id}`);
+        return http.get(`/contest/${id}`);
     }
-    
+
     getRanking(){
-        return http.get('/ranking');
+        return http.get('https://my-json-server.typicode.com/CodepaceOrganization/Datos-getwork-/ranking');
     }
 }

@@ -1,12 +1,8 @@
 <script >
-import {Course} from "@/sections/contest/model/course.entity.js";
-
 export default {
   name: "section-contest",
-
-  // Define los props esperados por el componente
   props: {
-    course: Course,
+    course: Object,
   }
 }
 </script>
@@ -17,7 +13,7 @@ export default {
 
       <div class="card-content">
         <div class="image-container">
-          <img :alt="course.title" :src="course.image" class="card-image" />
+          <img :alt="course.title" :src="course.urlImage" class="card-image" />
         </div>
         <div class="card-details">
           <h2 class="card-title">{{course.title}}</h2>

@@ -1,9 +1,9 @@
 export class Course {
-    constructor(id= '', title= '', date= '', image= '') {
+    constructor(id= '', title= '', date= '', urlImage= '') {
         this.id = id;
         this.title = title;
         this.date = date;
-        this.image = image;
+        this.urlImage = urlImage;
     }
 
 }
