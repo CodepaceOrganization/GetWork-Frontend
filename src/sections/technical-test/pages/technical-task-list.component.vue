@@ -38,6 +38,7 @@ export default {
           try {
               const updateResponse = await this.technicalTestsDetailsService.updateProgress(technicalTestDetailId, this.authenticationStore.currentUserId, progress);
               console.log(updateResponse.data);
+              console.log("Usuario: ", this.authenticationStore.currentUserId, "Task: ",technicalTestDetailId)
               const technicalTestDetail = this.technicalTestDetails.find(detail => detail.id === technicalTestDetailId);
               if (technicalTestDetail) {
                   technicalTestDetail.progress = progress;

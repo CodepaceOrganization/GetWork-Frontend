@@ -1,11 +1,7 @@
-import axios from "axios";
-
-const http = axios.create({
-    baseURL: 'https://my-json-server.typicode.com/Jemisas/APIS_AppWeb/tutors',
-});
+import http from "../../../shared/services/http-common.js";
 
 export class TutorsApiService {
     getTutors() {
-        return http.get();
+        return http.get('/tutors');
     }
 }

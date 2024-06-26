@@ -2,7 +2,6 @@ import http from "../../../shared/services/http-common.js";
 
 export class TechnicalTestApiService {
     getAll30DaysOf() {
-        console.log("as")
         return http.get('/technical-test/test-type/technical-tests-30-days-of');
     }
     getAllStudyPlan() {

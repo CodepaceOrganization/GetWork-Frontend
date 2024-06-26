@@ -5,9 +5,6 @@ export default {
     name: 'technical-test',
     props: {
         technicalTest: TechnicalTest,
-    },
-    created() {
-        console.log(this.technicalTest.imageUrl);
     }
 }
 </script>
