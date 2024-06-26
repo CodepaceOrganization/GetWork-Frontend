@@ -1,8 +1,4 @@
-import axios from "axios";
-
-const http = axios.create({
-    baseURL: 'http://localhost:5030/api/v1',
-});
+import http from "../../../shared/services/http-common.js";
 
 export class CoursesApiService{
     getAllCourses() {

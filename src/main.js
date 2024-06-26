@@ -49,8 +49,13 @@ import FloatLabel       from "primevue/floatlabel";
 import Checkbox         from "primevue/checkbox";
 import Rating           from "primevue/rating";
 import Avatar       from 'primevue/avatar';
+import Password from "primevue/password";
+import {createPinia} from "pinia";
+
+const pinia = createPinia();
 createApp(App)
     .use(router)
+    .use(pinia)
     .use(PrimeVue, { ripple: true })
     .use(DialogService)
     .use(ConfirmationService)
@@ -82,4 +87,5 @@ createApp(App)
     .component('pv-toolbar',        Toolbar)
     .component('pv-toast',          Toast)
     .component('pv-calendar', Calendar)
+    .component('pv-password', Password)
     .mount('#app');

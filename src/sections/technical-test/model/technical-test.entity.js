@@ -1,8 +1,8 @@
 export class TechnicalTest {
-    constructor(id = '', title = '', description = '', image = '') {
+    constructor(id = '', title = '', description = '', imageUrl = '') {
         this.id = id;
         this.title = title;
         this.description = description;
-        this.image = image;
+        this.imageUrl = image;
     }
 }

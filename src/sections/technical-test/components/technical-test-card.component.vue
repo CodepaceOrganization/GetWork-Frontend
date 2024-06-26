@@ -5,6 +5,9 @@ export default {
     name: 'technical-test',
     props: {
         technicalTest: TechnicalTest,
+    },
+    created() {
+        console.log(this.technicalTest.imageUrl);
     }
 }
 </script>
@@ -14,7 +17,7 @@ export default {
         <template #content>
             <div class="card-content">
                 <div class="image-container">
-                    <img :alt="technicalTest.title" :src="technicalTest.image" class="card-image" />
+                    <img :alt="technicalTest.title" :src="technicalTest.imageUrl" class="card-image" />
                 </div>
                 <div class="card-details">
                     <h2 class="card-title">{{technicalTest.title}}</h2>

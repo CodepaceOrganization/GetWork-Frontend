@@ -2,14 +2,11 @@ import http from "../../../shared/services/http-common.js";
 
 export class TechnicalTestApiService {
     getAll30DaysOf() {
-        return http.get('/technical-tests-30-days-of');
+        console.log("as")
+        return http.get('/technical-test/test-type/technical-tests-30-days-of');
     }
     getAllStudyPlan() {
-        return http.get('/technical-tests-study-plan');
-    }
-    getTechnicalTestDetail(id) {
-        return http.get(`/details-${id}`);
-
+        return http.get('/technical-test/test-type/technical-tests-study-plan');
     }
     getById(id) {
         return http.get(`/technical-tests/${id}`);
@@ -21,12 +18,6 @@ export class TechnicalTestApiService {
 
     update(id, tutorialResource) {
         return http.put(`/technical-tests/${id}`, tutorialResource);
-    }
-    getTechnicalTestDetailById(technicalTestId, technicalTaskId) {
-        return http.get(`/details-${technicalTestId}/${technicalTaskId}`);
-    }
-    updateProgress(technicalTestId, detail) {
-        return http.put(`/details-${technicalTestId}/${detail.id}`, detail);
     }
     delete(id) {
         return http.delete(`/technical-tests/${id}`);

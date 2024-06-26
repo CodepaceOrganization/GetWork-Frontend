@@ -21,6 +21,7 @@ export default {
         this.technicalTestsService.getAll30DaysOf()
             .then(response => {
                 this.technicalTests = response.data;
+                console.log(this.technicalTests);
             })
             .catch(e => {
                 console.log(e);
@@ -42,10 +43,10 @@ export default {
                 <h2 class="title">{{ $t('technical-test.title') }}</h2>
                 <div class="card-container">
                     <router-link
-                        v-for="technicalTest in technicalTests"
-                        :key="technicalTest.id"
-                        :to="'/details/' + technicalTest.id">
-                      <technical-test-card-component class="technical-test-card" :technicalTest="technicalTest"></technical-test-card-component>
+                            v-for="technicalTest in technicalTests"
+                            :key="technicalTest.id"
+                            :to="{ name: 'technical-test-details', params: { id: technicalTest.id } }">
+                        <technical-test-card-component class="technical-test-card" :technicalTest="technicalTest"></technical-test-card-component>
                     </router-link>
                 </div>
             </div>
@@ -61,7 +62,7 @@ export default {
             </div>
     </div>
     <div class = "calendar-container">
-        <pv-calendar v-model="date" inline showWeek />
+        <pv-calendar inline showWeek />
     </div>
 </template>
 

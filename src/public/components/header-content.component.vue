@@ -1,3 +1,39 @@
+<script>
+import { useRouter } from 'vue-router';
+import LanguageSwitcher from "@/public/components/language-switcher.component.vue";
+import AuthenticationSection from "@/sections/iam/components/authentication-section.component.vue";
+
+export default {
+    name: "header-content",
+    components: {AuthenticationSection, LanguageSwitcher},
+    data() {
+        return {
+            drawer: false,
+            isDrawerOpen: false, // Agregamos una variable para rastrear si el drawer está abierto o cerrado
+            items: [
+                { label: 'navbar.technical-tests', to: '/technical-tests', class: 'item-1' },
+                { label: 'navbar.contest', to: '/Contest-list', class: 'item-2' },
+                { label: 'navbar.simulacrum', to: '/Simulacrum', class: 'item-3' },
+                { label: 'navbar.tutors', to: '/Tutors', class: 'item-4' },
+            ],
+            itemsRight: [
+                { label: 'navbar.users', to: '/User', class: 'item-5' },
+                { label: 'Premium', to: '/Premium', class: 'item-6' },
+            ]
+        }
+    },
+    methods: {
+        toggleDrawer() {
+            this.drawer = !this.drawer;
+            this.isDrawerOpen = !this.isDrawerOpen;
+        },
+        navigateTo(route) {
+            const router = useRouter();
+            router.push(route);
+        }
+    }
+}
+</script>
 <template>
   <div>
     <pv-toolbar class="toolbar" fixed>
@@ -16,6 +52,7 @@
       </template>
       <template #end>
         <div class="flex-row">
+            <authentication-section/>
           <router-link v-for="(item, index) in itemsRight" :key="item.label" v-slot="{ navigate, href }" :to="item.to" custom>
             <pv-button :href="href" class="p-button-text" :class="item.class" :style="{ fontSize: isDrawerOpen ? '16px' : '' }" @click="navigate">
               {{ $t(item.label) }}
@@ -37,45 +74,10 @@
           {{ $t(item.label) }}
         </pv-button>
       </router-link>
+
     </div>
   </div>
 </template>
-
-<script>
-import { useRouter } from 'vue-router';
-import LanguageSwitcher from "@/public/components/language-switcher.component.vue";
-
-export default {
-  name: "header-content",
-  components: {LanguageSwitcher},
-  data() {
-    return {
-      drawer: false,
-      isDrawerOpen: false, // Agregamos una variable para rastrear si el drawer está abierto o cerrado
-      items: [
-        { label: 'navbar.technical-tests', to: '/technical-tests', class: 'item-1' },
-        { label: 'navbar.contest', to: '/Contest-list', class: 'item-2' },
-        { label: 'navbar.simulacrum', to: '/Simulacrum', class: 'item-3' },
-        { label: 'navbar.tutors', to: '/Tutors', class: 'item-4' },
-      ],
-      itemsRight: [
-        { label: 'navbar.users', to: '/User', class: 'item-5' },
-        { label: 'Premium', to: '/Premium', class: 'item-6' },
-      ]
-    }
-  },
-  methods: {
-    toggleDrawer() {
-      this.drawer = !this.drawer;
-      this.isDrawerOpen = !this.isDrawerOpen; 
-    },
-    navigateTo(route) {
-      const router = useRouter();
-      router.push(route);
-    }
-  }
-}
-</script>
 
 <style scoped>
 * {
@@ -106,11 +108,11 @@ export default {
   font-size: 24px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  display: none; /* Ocultar el botón de menú por defecto */
+  display: none;
 }
 
 .menu-button:hover {
-  transform: scale(1.2); /* Cambiamos el tamaño del botón al pasar el mouse */
+  transform: scale(1.2);
 }
 
 .flex-row {
@@ -132,10 +134,10 @@ export default {
   background-color: rgba(189, 63, 87, 0.49);
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinea los elementos al inicio */
+  align-items: flex-start;
   justify-content: center;
   z-index: 300;
-  transition: transform 0.3s ease-in-out; /* Agregamos una transición al abrir y cerrar el drawer */
+  transition: transform 0.3s ease-in-out;
   transform: translateX(-100%);
 }
 

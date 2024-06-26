@@ -1,4 +1,6 @@
 <script >
+import {useAuthenticationStore} from "@/sections/iam/services/authentication.store.js";
+
 export default {
   name:'profile-management',
   data(){
@@ -6,11 +8,14 @@ export default {
       firstName:'Maria',
       lastName:'Sanchez',
       dni:'91242121',
-      phoneNumber:982215977
-
+      phoneNumber:982215977,
+        authenticationStore: useAuthenticationStore()
     }
   },
   computed: {
+      currentUsername() {
+          return this.authenticationStore.currentUsername;
+      },
     getFullName() {
       return this.firstName + ' ' + this.lastName;
     },

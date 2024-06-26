@@ -1,6 +1,7 @@
 <script>
 import technicalTestDetailCardComponent from "@/sections/technical-test/components/technical-task-card.component.vue";
-import {TechnicalTestApiService} from "@/sections/technical-test/services/technical-test-api.service.js";
+import {TechnicalTaskApiService} from "@/sections/technical-test/services/technical-task-api.service.js";
+import {useAuthenticationStore} from "@/sections/iam/services/authentication.store.js";
 
 export default {
   name: "technical-test-detail-list",
@@ -11,19 +12,41 @@ export default {
       title: "details",
       technicalTestDetails: [],
       technicalTestsDetailsService: null,
+      authenticationStore: useAuthenticationStore()
     }
   },
   created() {
-    this.technicalTestsDetailsService = new TechnicalTestApiService();
-
-    this.technicalTestsDetailsService.getTechnicalTestDetail(this.id)
+    this.technicalTestsDetailsService = new TechnicalTaskApiService();
+    this.technicalTestsDetailsService.getTechnicalTestDetail(this.id, this.authenticationStore.userId)
         .then(response => {
           this.technicalTestDetails = response.data;
+          this.assignUserToTask(this.authenticationStore.currentUserId);
         })
         .catch(e => {
           console.log(e);
         });
   },
+  methods: {
+        async assignUserToTask(userId) {
+            try {
+                await this.technicalTestsDetailsService.assignUserToTechnicalTask(this.id, userId);
+            } catch (error) {
+                console.error(error);
+            }
+        },
+      async updateProgress(progress, technicalTestDetailId) {
+          try {
+              const updateResponse = await this.technicalTestsDetailsService.updateProgress(technicalTestDetailId, this.authenticationStore.currentUserId, progress);
+              console.log(updateResponse.data);
+              const technicalTestDetail = this.technicalTestDetails.find(detail => detail.id === technicalTestDetailId);
+              if (technicalTestDetail) {
+                  technicalTestDetail.progress = progress;
+              }
+          } catch (error) {
+              console.error(error);
+          }
+      }
+    },
     computed: {
     earrings() {
       return this.technicalTestDetails.filter(detail => detail.progress === "Earrings");
@@ -58,6 +81,7 @@ export default {
               :key="technicalTestDetail.id"
               :technicalTestDetail="technicalTestDetail"
               :index="index + 1"
+              @update-progress="updateProgress"
           ></technical-test-detail-card-component>
         </div>
       </div>
@@ -78,6 +102,7 @@ export default {
               :key="technicalTestDetail.id"
               :technicalTestDetail="technicalTestDetail"
               :index="index + 1"
+              @update-progress="updateProgress"
           ></technical-test-detail-card-component>
         </div>
       </div>
@@ -98,6 +123,7 @@ export default {
               :key="technicalTestDetail.id"
               :technicalTestDetail="technicalTestDetail"
               :index="index + 1"
+              @update-progress="updateProgress"
           ></technical-test-detail-card-component>
         </div>
       </div>
