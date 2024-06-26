@@ -15,16 +15,16 @@ export default {
       authenticationStore: useAuthenticationStore()
     }
   },
-  created() {
-    this.technicalTestsDetailsService = new TechnicalTaskApiService();
-    this.technicalTestsDetailsService.getTechnicalTestDetail(this.id, this.authenticationStore.userId)
-        .then(response => {
-          this.technicalTestDetails = response.data;
-          this.assignUserToTask(this.authenticationStore.currentUserId);
-        })
-        .catch(e => {
-          console.log(e);
-        });
+  async created() {
+      this.technicalTestsDetailsService = new TechnicalTaskApiService();
+      await this.assignUserToTask(this.authenticationStore.currentUserId);
+      this.technicalTestsDetailsService.getTechnicalTestDetail(this.id, this.authenticationStore.userId)
+          .then(response => {
+              this.technicalTestDetails = response.data;
+          })
+          .catch(e => {
+              console.log(e);
+          });
   },
   methods: {
         async assignUserToTask(userId) {
