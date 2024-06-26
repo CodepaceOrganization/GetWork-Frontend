@@ -1,6 +1,5 @@
 <script>
 import {CourseDetail} from "@/sections/contest/model/coursedetail.entity.js";
-
 export default {
   name: "contest-detail",
   props: {
@@ -16,24 +15,6 @@ export default {
       <br>
       <p class="about">{{courseDetail.description}}</p>
     </div>
-
-    <h2 class="title-goals" >GOALS</h2>
-    <pv-card class="goals-card" style="overflow: hidden">
-      <template #content>
-        <div class="container">
-          <div class="column">
-            <div class="goals-container">
-              <p class="goal-card">{{ courseDetail.goal1 }}</p>
-              <p class="goal-card">{{ courseDetail.goal2 }}</p>
-              <p class="goal-card">{{ courseDetail.goal3 }}</p>
-              <p class="goal-card">{{ courseDetail.goal4 }}</p>
-              <p class="goal-card">{{ courseDetail.goal5 }}</p>
-              <p class="goal-card">{{ courseDetail.goal6 }}</p>
-            </div>
-          </div>
-        </div>
-      </template>
-    </pv-card>
     
     <pv-card class="introduction-card" style="width: 30rem; height: 11rem; overflow: hidden">
       <template #content>
@@ -73,7 +54,6 @@ export default {
         </div>
       </template>
     </pv-card>
-    
   </div>
 </template>
 
