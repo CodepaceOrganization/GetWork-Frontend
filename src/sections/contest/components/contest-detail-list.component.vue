@@ -4,10 +4,13 @@ import {CoursesApiService} from "@/sections/contest/services/courses-api.service
 import SectionContestDetail from './contest-detail.component.vue';
 import {CoursesDetailApiService} from "@/sections/contest/services/coursesdetail-api.service.js";
 import ContestDetail from "@/sections/contest/components/contest-detail.component.vue";
+import {GoalApiService} from "../services/goal-api.service.js";
+import GoalComponent from "@/sections/contest/components/goal.component.vue"; 
+
 
 export default {
   name: "contest-detail-list.component",
-  components: {ContestDetail, SectionContest, SectionContestDetail},
+  components: {ContestDetail, SectionContest, SectionContestDetail, GoalComponent},
   props: ['id'],
   data() {
     return {
@@ -16,6 +19,8 @@ export default {
       coursesService: null,
       coursesDetail: [],
       coursesDetailService: null,
+      goals: [],
+      goalsService: null
     }
   },
   created() {
@@ -36,6 +41,15 @@ export default {
         .catch(e => {
           console.log(e);
         });
+
+    this.goalsService = new GoalApiService();
+    this.goalsService.getGoal()
+        .then(response => {
+          this.goals = response.data;
+        })
+        .catch(e => {
+          console.log(e);
+        });
   },
   computed: {
     filteredCourses() {
@@ -44,6 +58,9 @@ export default {
     
     filteredCoursesDetail() {
       return this.coursesDetail.filter(courseDetail => courseDetail.id === Number(this.id));
+    },
+    filteredGoals() {
+      return this.goals.filter(goal => goal.id === Number(this.id));
     }
   },
   
@@ -51,9 +68,16 @@ export default {
 </script>
 
 <template>
+  
   <div class="coursesContent">
     <div class="coursesContainer">
       <section-contest v-for="course in filteredCourses" :course="course" :key="course.id"></section-contest>
+    </div>
+  </div>
+
+  <div class="goalsContent">
+    <div class="goalsContainer">
+      <goal-component v-for="goal in filteredGoals" :goal="goal" :key="goal.id"></goal-component>
     </div>
   </div>
   

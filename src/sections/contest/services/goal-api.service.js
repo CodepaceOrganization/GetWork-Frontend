@@ -4,9 +4,9 @@ const http = axios.create({
     baseURL: 'http://localhost:5030/api/v1',
 });
 
-export class CoursesDetailApiService{
-    getCoursesDetail() {
-        return http.get('/detail');
+export class GoalApiService{
+    getGoal() {
+        return http.get('/goal');
     }
 }
 
