@@ -23,71 +23,75 @@ export default {
 <template>
   <div>
     <h3>Sign In</h3>
-  </div>
-  <p class="p-fluid mb-5">Please enter the required information to sign in.</p>
-  <div class = "container">
-    <form @submit.prevent="onSignIn">
-      <div class="">
-        <div class="field mt-5">
-            <pv-float-label>
+    <p class="p-fluid">Please enter your username and password to sign in.</p>
+    <div class="container">
+      <form @submit.prevent="onSignIn">
+        <div class="p-fluid">
+          <div class="p-field mt-5">
+            <pv-float-label class="input">
               <label for="username">Username</label>
               <pv-input-text id="username" v-model="username" :class="{'p-invalid': !username}"/>
             </pv-float-label>
-            <small v-if="!username" class="p-invalid">Username is required.</small>
-        </div>
-        <div class="p-field mt-5">
-            <pv-float-label>
+          </div>
+          <div class="p-field mt-5">
+            <pv-float-label class="input">
               <label for="password">Password</label>
               <pv-input-text id="password" v-model="password" :class="{'p-invalid': !password}" type="password"/>
             </pv-float-label>
-            <small v-if="!password" class="p-invalid">Password is required.</small>
+          </div>
+          <div class="p-field mt-5">
+            <pv-button type="submit">Sign In</pv-button>
+          </div>
         </div>
-        <div class="p-field mt-5">
-          <pv-button type="submit">Sign In</pv-button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 73vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
 }
+
 h3 {
-    color: #333;
-    font-size: 24px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
 }
 
 .p-fluid {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
 }
 
 .field, .p-field {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .pv-button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .pv-button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .p-invalid {
-    color: red;
+  color: red;
+  text-align: center;
 }
 </style>

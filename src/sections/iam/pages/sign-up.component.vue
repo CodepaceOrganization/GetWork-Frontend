@@ -55,7 +55,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 73vh;
+    height: 60vh;
 }
 h3 {
     color: #333;
