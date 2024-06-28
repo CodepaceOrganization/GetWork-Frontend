@@ -34,7 +34,6 @@ export default {
 <div class="mt-6 mx-6 flex flex-column my-5">
   <pv-card class="p-7 shadow-5 mt-6">
     <template #title>
-
     </template>
     <template #content>
       <div class="text-center">

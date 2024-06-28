@@ -1,16 +1,26 @@
-<script >
-
+<script>
 export default {
-  name: "section-simulacrum"
+  name: "section-simulacrum",
+  methods: {
+    start() {
+      const links = ["https://forms.gle/efEcwYkV67dPMNmUA", "https://forms.gle/mjvnt8eV2DtooHMfA"];
+      const selectedLinks = [];
+      for (let i = 0; i < 3; i++) {
+        const randomIndex = Math.floor(Math.random() * links.length);
+        selectedLinks.push(links[randomIndex]);
+        links.splice(randomIndex, 1);
+      }
+      selectedLinks.forEach(link => window.open(link));
+    }
+  }
 }
-
 </script>
 
 <template>
   <div class="section-simulacrum">
   <img src="/src/assets/images/simulacrum-image.png" alt="simulacrum">
   <p>{{ $t('simulacrum.title') }}</p>
-  <pv-button :label="$t('simulacrum.button')" class="btn_empezar"/>
+    <pv-button :label="$t('simulacrum.button')" class="btn_empezar" @click="start"/>
   <ol start="1" class="list-simulacrum">
     <li>{{ $t('simulacrum.l1') }}</li>
     <li>{{ $t('simulacrum.l2') }}</li>
